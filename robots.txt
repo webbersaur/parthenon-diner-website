@@ -1,0 +1,12 @@
+# robots.txt for Parthenon Diner
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://parthenondiner.com/sitemap.xml
+
+# Disallow crawling of certain directories if needed in the future
+# Disallow: /admin/
+# Disallow: /private/
