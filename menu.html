@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Parthenon Diner Menu - Classic American diner fare and Greek specialties. Breakfast served all day. View our full menu.">
+  <title>Menu | Parthenon Diner</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-text">Parthenon</span>
+        <span class="logo-subtitle">Diner & Restaurant</span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="menu.html" class="nav-link active">Menu</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#locations" class="nav-link">Locations</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          <li class="nav-cta">
+            <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/v3" class="btn btn-primary" target="_blank">Order Now</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-list">
+      <li><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+      <li><a href="index.html#about" class="mobile-nav-link">About</a></li>
+      <li><a href="index.html#locations" class="mobile-nav-link">Locations</a></li>
+      <li><a href="index.html#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/v3" class="btn btn-primary" target="_blank" style="width: 100%;">Order Now</a>
+    </div>
+  </nav>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Menu Hero -->
+  <section class="menu-hero">
+    <div class="container">
+      <div class="menu-hero-content">
+        <span class="section-label">Our Menu</span>
+        <h1>Delicious Food, Made Fresh Daily</h1>
+        <p>From hearty breakfasts to Greek classics, explore our carefully crafted menu.</p>
+        <div class="menu-hero-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span>Breakfast Served All Day</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Tabs -->
+  <section class="menu-section">
+    <div class="container">
+      <!-- Tab Navigation -->
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-tab="breakfast">Breakfast</button>
+        <button class="menu-tab" data-tab="lunch">Lunch</button>
+        <button class="menu-tab" data-tab="dinner">Dinner</button>
+        <button class="menu-tab" data-tab="greek">Greek</button>
+        <button class="menu-tab" data-tab="drinks">Drinks</button>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="menu-content">
+
+        <!-- BREAKFAST TAB -->
+        <div class="menu-tab-content active" id="breakfast">
+
+          <!-- House Specialties -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>House Specialties</h2>
+              <p>Sliced tomatoes or oatmeal may be substituted for home fries</p>
+            </div>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Hungry Man</h3>
+                  <span class="menu-item-price">$14</span>
+                </div>
+                <p>3 eggs, bacon, ham, sausage, home fries & toast</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Really Hungry Man</h3>
+                  <span class="menu-item-price">$17</span>
+                </div>
+                <p>Short stack, bacon, ham, sausage, 2 eggs, home fries & toast</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Huevos Rancheros</h3>
+                  <span class="menu-item-price">$17</span>
+                </div>
+                <p>3 eggs, potatoes, chorizo, chipotle peppers, black beans, onions, cheddar, tortillas, salsa, avocado, sour cream</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Eggs Your Way</h3>
+                  <span class="menu-item-price">$8.50 / $9.50</span>
+                </div>
+                <p>2 eggs or 3 eggs. Add bacon, sausage or ham $4 | turkey bacon or turkey sausage $5 | Canadian bacon $4.50 | avocado $3 | fresh baked muffin $3</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Corned Beef Hash & Eggs</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>House-made hash, 2 eggs your way, home fries, toast</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>The Jess Bowl</h3>
+                  <span class="menu-item-price">$15</span>
+                </div>
+                <p>Brown rice, black beans, diced tomatoes, cheddar cheese, avocado, diced jalapeños, topped with 2 poached eggs. Created by Jessica Dean Nutrition: Shoreline's Best Dietitian</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Jimmy Bowl</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Chorizo sausage, peppers, onions, potatoes, shredded cheddar jack topped with two eggs and sliced avocado</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Roasted Butternut Squash Hash & Eggs</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p class="vegetarian">Served with two eggs your way, fresh mixed fruit</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Steak & Eggs</h3>
+                  <span class="menu-item-price">$21</span>
+                </div>
+                <p>Choice ribeye steak, 2 eggs your way, sliced tomato, home fries, toast</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Farm Fresh Omelettes -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Farm Fresh Omelettes</h2>
+              <p>All omelettes come with home fries or sliced tomatoes or oatmeal and toast. Substitute: short stack $3 (instead of home fries and toast) fresh fruit $3</p>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Veggie</h3>
+                  <span class="menu-item-price">$12.50</span>
+                </div>
+                <p class="vegetarian">Onions, mushrooms, peppers, tomato</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Cheese</h3>
+                  <span class="menu-item-price">$10.50 / $11.50</span>
+                </div>
+                <p>Choose American, Swiss, cheddar, feta</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Bacon & Cheese</h3>
+                  <span class="menu-item-price">$12.50</span>
+                </div>
+                <p>Applewood smoked bacon, choice of cheese</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Ham & Cheese</h3>
+                  <span class="menu-item-price">$12.50</span>
+                </div>
+                <p>Fire smoked natural ham, choice of cheese</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Maya's Greek</h3>
+                  <span class="menu-item-price">$14</span>
+                </div>
+                <p class="vegetarian">Fresh spinach, diced tomatoes, olives, feta</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Western</h3>
+                  <span class="menu-item-price">$12.50</span>
+                </div>
+                <p>Ham, peppers, onions, cheddar cheese</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Country</h3>
+                  <span class="menu-item-price">$12.50</span>
+                </div>
+                <p>Bacon, broccoli, mushrooms, tomato, cheddar cheese</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Philly</h3>
+                  <span class="menu-item-price">$14.50</span>
+                </div>
+                <p>Shaven steak, American cheese, onions, peppers</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Kostas</h3>
+                  <span class="menu-item-price">$12.50</span>
+                </div>
+                <p>Sausage, onions, Vermont cheddar cheese</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Mardi Gras</h3>
+                  <span class="menu-item-price">$13.50</span>
+                </div>
+                <p>Sausage, onion, tomato, jalapeño, cheddar</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Meat Lovers</h3>
+                  <span class="menu-item-price">$14.50</span>
+                </div>
+                <p>Ham, bacon, sausage and American cheese</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Saybrook Omelette</h3>
+                  <span class="menu-item-price">$14.50</span>
+                </div>
+                <p>Goat cheese, fresh spinach, sautéed mushrooms</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Griddle Me This -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Griddle Me This!</h2>
+              <p>Add Vermont maple syrup $2</p>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Belgian Waffle with Syrup</h3>
+                  <span class="menu-item-price">$8.50</span>
+                </div>
+                <p>Golden classic. Add berries & whipped cream $3</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Pancakes</h3>
+                  <span class="menu-item-price">$8 / $9</span>
+                </div>
+                <p>Sweet cream butter & syrup. Classic stack or short stack. Add berries & whipped cream $3 | add chocolate chips $2</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Banana Pecan Pancakes</h3>
+                  <span class="menu-item-price">$9.50 / $10.50</span>
+                </div>
+                <p>Caramelized bananas, toasted pecans, sweet cream butter & syrup</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Oreo Cookie Pancakes</h3>
+                  <span class="menu-item-price">$8.50 / $9.50</span>
+                </div>
+                <p>Whipped cream, chocolate sauce</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Chicken and Waffles</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Fried buttermilk boneless chicken breast, waffle, sprinkled with cinnamon and served with pure maple syrup</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>French Toast with Powdered Sugar</h3>
+                  <span class="menu-item-price">$8 / $9</span>
+                </div>
+                <p>Challah bread. Full stack or short stack. Add berries & whipped cream $2.50</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Nutella French Toast</h3>
+                  <span class="menu-item-price">$12.50</span>
+                </div>
+                <p>Battered challah bread, chocolate hazelnut spread, sliced bananas</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Deep Fried French Toast Sticks</h3>
+                  <span class="menu-item-price">$8</span>
+                </div>
+                <p>With raspberry syrup and powdered sugar</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Apple Pie Stuffed French Toast</h3>
+                  <span class="menu-item-price">$12.50</span>
+                </div>
+                <p>Our in house made challah bread stuffed with apple pie filling, topped with powdered sugar and whip cream</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Poached -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Poached</h2>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Classic Eggs Benedict</h3>
+                  <span class="menu-item-price">$13</span>
+                </div>
+                <p>2 poached, toasted English muffin, Canadian bacon, house hollandaise, home fries</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Smoked Salmon Benedict</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>2 poached, toasted English muffin, sliced lox, hollandaise, home fries</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Short Rib Hash & Eggs</h3>
+                  <span class="menu-item-price">$15.50</span>
+                </div>
+                <p>House-made short rib hash, 2 poached, English muffin, cheddar cheese, hollandaise</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>California Benedict</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>2 poached, toasted English muffin, bacon, avocado, house hollandaise, home fries</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Corned Beef Hash Benedict</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>House-made corned beef hash, 2 poached, English muffin, hollandaise, home fries</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Breakfast Sandwiches -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Breakfast Sandwiches</h2>
+              <p>Served on choice of roll, grilled sourdough or wrap, choose from American, cheddar or Swiss cheese | egg whites add $1</p>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Bacon, 2 Eggs & Cheese</h3>
+                  <span class="menu-item-price">$6</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Turkey Sausage Patty, 2 Eggs & Cheese</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Short Rib Hash, 2 Eggs & Cheese</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Mexican Breakfast Wrap</h3>
+                  <span class="menu-item-price">$13.50</span>
+                </div>
+                <p>Scrambled eggs, bacon, avocado, onion, cheddar cheese, fire roasted salsa, sour cream, home fries</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Avocado Toast</h3>
+                  <span class="menu-item-price">$11.50</span>
+                </div>
+                <p>Toasted sourdough, avocado spread, tomato, bacon. Add two eggs $2 | add lox $5</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Avocado Grilled Cheese</h3>
+                  <span class="menu-item-price">$11</span>
+                </div>
+                <p>Bacon, avocado, tomato, cheddar, grilled sourdough</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Sunrise Wrap</h3>
+                  <span class="menu-item-price">$13.50</span>
+                </div>
+                <p>Sausage, scrambled egg, cheddar, home fries on a grilled wrap</p>
+              </div>
+            </div>
+            <p class="menu-note">Substitute gluten free bread $2</p>
+          </div>
+
+          <!-- Morning Sides -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Morning Sides, Meats & Other Delights</h2>
+            </div>
+            <div class="menu-items menu-items-grid menu-items-compact">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Bagel</h3>
+                  <span class="menu-item-price">$4</span>
+                </div>
+                <p>With cream cheese $5 | lox & cream cheese $10 | lox, cream cheese, tomato, onions, capers $14</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Fresh Cut Fruit</h3>
+                  <span class="menu-item-price">$5</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Fresh Baked Muffins</h3>
+                  <span class="menu-item-price">$3.50</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Jumbo English Muffin</h3>
+                  <span class="menu-item-price">$3.50</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Danish</h3>
+                  <span class="menu-item-price">$3.50</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Hot Oatmeal Bowl</h3>
+                  <span class="menu-item-price">$4.50</span>
+                </div>
+                <p>Add bananas $2 | add cinnamon & raisins $1</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Greek Yogurt Parfait</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+                <p>Granola, honey, mixed fruit</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Bacon, Ham, Sausage</h3>
+                  <span class="menu-item-price">$4</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Turkey Sausage or Turkey Bacon</h3>
+                  <span class="menu-item-price">$5</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Canadian Bacon</h3>
+                  <span class="menu-item-price">$4.50</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>House Made Corned Beef Hash</h3>
+                  <span class="menu-item-price">$6</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Butternut Squash Hash</h3>
+                  <span class="menu-item-price">$6</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Side of Avocado</h3>
+                  <span class="menu-item-price">$3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- LUNCH TAB -->
+        <div class="menu-tab-content" id="lunch">
+
+          <!-- Starters -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Starters, Snacks & Picks</h2>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Disco Fries</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+                <p>Cheese fries, house gravy</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Fried Mozzarella</h3>
+                  <span class="menu-item-price">$9</span>
+                </div>
+                <p>Battered sticks, marinara dipping sauce</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Buffalo Wings</h3>
+                  <span class="menu-item-price">$14</span>
+                </div>
+                <p>Spicy chicken wings, bleu cheese dip</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Quesadillas</h3>
+                  <span class="menu-item-price">$9</span>
+                </div>
+                <p>Monterey & cheddar cheese, pico de gallo, sour cream. Add chicken $5</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Steak and Cheese Quesadilla</h3>
+                  <span class="menu-item-price">$15</span>
+                </div>
+                <p>Philly steak, cheddar blend, onions, peppers, served with sour cream and salsa</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Warm Pretzels</h3>
+                  <span class="menu-item-price">$10</span>
+                </div>
+                <p>Sea salt, beer cheese dip</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Mac & Cheese Bites</h3>
+                  <span class="menu-item-price">$9</span>
+                </div>
+                <p>Smoked gouda cheese, panko crumbs, cheddar cheese dip</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Philly Steak Rolls</h3>
+                  <span class="menu-item-price">$10</span>
+                </div>
+                <p>Shaven steak, onions & cheese, stuffed egg roll wrappers</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Chicken Tender Basket</h3>
+                  <span class="menu-item-price">$11</span>
+                </div>
+                <p>Honey mustard dipping sauce</p>
+              </div>
+              <div class="menu-item featured">
+                <div class="menu-item-header">
+                  <h3>Hot Appetizer Sampler for 2</h3>
+                  <span class="menu-item-price">$16.50</span>
+                </div>
+                <p>Chicken tenders, buffalo wings, fried mozzarella, philly steak rolls, mac n cheese bites</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soups & Greens -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Soups & Greens</h2>
+              <p>Add Grilled Chicken $5 | Add Steak $7 | Add Shrimp $7 | Add Grilled Salmon $9<br>Dressings: White Balsamic, Blue Cheese, Asian Sesame, Honey Mustard, Thousand Island, Ranch</p>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>French Onion Crock</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+                <p>Beef bone broth, bubbly gruyere</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Soup of the Day</h3>
+                  <span class="menu-item-price">$5 / $6 / $9</span>
+                </div>
+                <p>Cup | Bowl | to go QT</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Greek Salad</h3>
+                  <span class="menu-item-price">$12</span>
+                </div>
+                <p>Feta, kalamata, cucumbers, red onion, tomato, grape leaves, anchovies, chopped greens, grilled pita</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>CT Harvest Salad</h3>
+                  <span class="menu-item-price">$12</span>
+                </div>
+                <p>Sweetened cranberries, toasted walnuts, crumbled goat cheese, mixed greens</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Caesar Salad</h3>
+                  <span class="menu-item-price">$11</span>
+                </div>
+                <p>Crisp Romaine, shaven parmesan, house croutons, house dressing, grilled pita</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Spinach Salad</h3>
+                  <span class="menu-item-price">$12</span>
+                </div>
+                <p>Spinach, sliced almonds, red onion, strawberries, crumbled goat cheese, balsamic</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Garden Salad</h3>
+                  <span class="menu-item-price">$11</span>
+                </div>
+                <p>Tomatoes, cucumbers, olives, mixed greens, red onion</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>California Cobb</h3>
+                  <span class="menu-item-price">$12</span>
+                </div>
+                <p>Avocado, bacon, tomato, onion, crumbled bleu cheese, hard-boiled egg, greens, grilled pita</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sandwiches -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Artisan Sandwiches & Handhelds</h2>
+              <p>Served with fries, slaw & pickle. Upgrade fries to sweet potato fries or sidewinders $3 | Substitute gluten free bread $3</p>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Deli Reuben</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Corned beef or turkey, sauerkraut, melted Swiss, Russian dressing, grilled rye</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Buffalo Chicken Wrap</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Spicy fried chicken, Romaine lettuce, bleu cheese dressing, jumbo tortilla</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Torino Panini</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Grilled chicken, roasted peppers, mozzarella cheese, pesto</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Philly Cheese Steak</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Shaven steak, grilled onions, peppers, melted American cheese choice of grinder roll or wrap</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Pastrami Nightmare</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Shaven pastrami, Swiss cheese, onion, tomato, grilled rye bread</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Grilled Tuna Melt</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Philly French Dip</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Shaven steak, melted Swiss cheese, au jus, grinder roll</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Island Fish Tacos</h3>
+                  <span class="menu-item-price">$17.50</span>
+                </div>
+                <p>Battered cod, house napa slaw, fire roasted salsa, chipotle crema, flour tortillas (3)</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Buttermilk Fried Chicken</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Crispy chicken, napa chili slaw, sweet chili drizzle, potato bun</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>West Coast Chicken Wrap</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Grilled chicken, Swiss, avocado, bacon, lettuce, tomatoes, chipotle mayo</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Short Rib Grilled Cheese</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Shredded short ribs, caramelized onions, cheddar & American cheese, sourdough</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Grilled Chicken Caesar Wrap</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Grilled chicken breast, shaven parmesan, croutons, creamy Caesar dressing</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Classic Turkey Club</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Carved turkey, Swiss cheese, bacon, lettuce, tomatoes, mayonnaise</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Chicken Parmigiana</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Crispy chicken, melted mozzarella, house marinara, choose grinder or wrap</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Falafel Wrap</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p class="vegetarian">Crispy hot falafel, lettuce, tomato, red onion, tzatziki sauce served with sweet potato fries</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Chicken Tenders</h3>
+                  <span class="menu-item-price">$16 / $16.50</span>
+                </div>
+                <p>Breaded tenderloins, honey mustard dip. Buffalo wing sauce toss & bleu cheese</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- The Classics -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>The Classics</h2>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Bacon | Lettuce | Tomato</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+                <p>With mayo, choice of bread. Add avocado $2</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Grilled Cheese</h3>
+                  <span class="menu-item-price">$6</span>
+                </div>
+                <p>Choose bread, choose cheese. Add tomato $1 | add bacon or ham $2</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Hot Pastrami or Corned Beef or Roast Beef</h3>
+                  <span class="menu-item-price">$8</span>
+                </div>
+                <p>Thin sliced, marble rye dark ale mustard</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Hot Lobster Roll</h3>
+                  <span class="menu-item-price">MP</span>
+                </div>
+                <p>100% lobster meat, served with French fries and coleslaw (Seasonal)</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Tuna Salad</h3>
+                  <span class="menu-item-price">$7.50</span>
+                </div>
+                <p>Chilled with lettuce & tomatoes</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Natural Chicken Salad</h3>
+                  <span class="menu-item-price">$7.50</span>
+                </div>
+                <p>Poached and chilled chicken breast, celery, lettuce, tomato, choice of bread</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Hot Open Faced Turkey or Roast Beef</h3>
+                  <span class="menu-item-price">$14</span>
+                </div>
+                <p>House challah bread, potatoes, vegetable, gravy</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Sliced Turkey Breast or Shaved Steak</h3>
+                  <span class="menu-item-price">$8</span>
+                </div>
+                <p>Lettuce, tomatoes, choice of bread</p>
+              </div>
+            </div>
+            <p class="menu-note">We only serve natural chicken & natural beef. Our meats are fresh, no added antibiotics, no added hormones, sustainable & locally sourced when available.</p>
+          </div>
+
+          <!-- Gourmet Burgers -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Gourmet Burgers</h2>
+              <p>Served with fries, slaw & pickle | Substitute gluten free bread $3 | Upgrade fries to sweet potato fries or sidewinders $3</p>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Parthenon Burger</h3>
+                  <span class="menu-item-price">$13*</span>
+                </div>
+                <p>8oz Choice chuck, lettuce, tomatoes, pickles, potato bun. Add cheese $2 | add bacon $3 | add egg $2</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Cheeseburger Club</h3>
+                  <span class="menu-item-price">$14.50*</span>
+                </div>
+                <p>8oz Choice chuck, cheese, bacon, lettuce, tomatoes, mayo, triple decker</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Western Burger</h3>
+                  <span class="menu-item-price">$15*</span>
+                </div>
+                <p>8oz Choice chuck, caramelized onions, smoked bacon, cheddar cheese, honey BBQ, potato bun</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Tavern Burger</h3>
+                  <span class="menu-item-price">$15*</span>
+                </div>
+                <p>8oz Choice chuck, sautéed mushrooms, bacon, cheddar cheese, potato bun</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Double-Double Smashed</h3>
+                  <span class="menu-item-price">$15</span>
+                </div>
+                <p>2 smashed patties, American cheese, onion, chipotle mayo</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Rowdy Reuben Burger</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Grilled beef patty smothered with melted Swiss cheese, thousand island dressing and homemade coleslaw on grilled New York rye</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>House Turkey Burger</h3>
+                  <span class="menu-item-price">$15</span>
+                </div>
+                <p>Dark and light fresh turkey blend, creamy beer cheese, house slaw, sweet chili sauce, lettuce, potato bun</p>
+              </div>
+            </div>
+            <p class="menu-note">*Consuming undercooked meats, poultry, shellfish or eggs, may increase your risk of food born illness.</p>
+          </div>
+
+          <!-- Sides -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Sides</h2>
+            </div>
+            <div class="menu-items menu-items-grid menu-items-compact">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>French Fries</h3>
+                  <span class="menu-item-price">$4.50</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Sweet Potato Fries</h3>
+                  <span class="menu-item-price">$5.50</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Mashed Potatoes</h3>
+                  <span class="menu-item-price">$4.50</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Coleslaw</h3>
+                  <span class="menu-item-price">$3.50</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Side Salad</h3>
+                  <span class="menu-item-price">$6</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Rice Pilaf</h3>
+                  <span class="menu-item-price">$4.50</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Riced Cauliflower</h3>
+                  <span class="menu-item-price">$6</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Onion Rings</h3>
+                  <span class="menu-item-price">$5.50</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Sidewinder Fries</h3>
+                  <span class="menu-item-price">$5.50</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Broccoli Rabe</h3>
+                  <span class="menu-item-price">$6</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Home Fries</h3>
+                  <span class="menu-item-price">$4.50</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Side Caesar</h3>
+                  <span class="menu-item-price">$5</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Brown Rice</h3>
+                  <span class="menu-item-price">$4.50</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- DINNER TAB -->
+        <div class="menu-tab-content" id="dinner">
+
+          <!-- Paleo Macros Diet -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Paleo Macros Diet</h2>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Diane</h3>
+                  <span class="menu-item-price">$17</span>
+                </div>
+                <p>Grilled London broil, sautéed broccoli rabe, garlic, olive oil</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Elayne</h3>
+                  <span class="menu-item-price">$14</span>
+                </div>
+                <p>Grilled turkey burger, avocado, roasted peppers, spinach, poached eggs, fruit</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Nancy</h3>
+                  <span class="menu-item-price">$13</span>
+                </div>
+                <p>Grilled chicken breast, sautéed broccoli, mushrooms, tomatoes, brown rice</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Helen</h3>
+                  <span class="menu-item-price">$13</span>
+                </div>
+                <p>Turkey burger, 3 scrambled egg whites, avocado, tomatoes, brown rice</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Stephanie</h3>
+                  <span class="menu-item-price">$14</span>
+                </div>
+                <p>Grilled chicken, hard boiled egg, sliced avocado, cucumbers, tomatoes, edamame quinoa</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Health Bowls -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Health Bowls</h2>
+              <p>Choice of riced cauliflower, quinoa and edamame, or brown rice</p>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Chicken Fajita</h3>
+                  <span class="menu-item-price">$14</span>
+                </div>
+                <p>Topped with fajita grilled chicken, black beans, roasted corn, tomatoes, mixed greens, sour cream and avocado</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Mediterranean</h3>
+                  <span class="menu-item-price">$14</span>
+                </div>
+                <p>Topped with grilled chicken, mixed greens, tomato, feta, red onions, kalamata olives and tzatziki sauce</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Blackened Shrimp</h3>
+                  <span class="menu-item-price">$15</span>
+                </div>
+                <p>Topped with fresh shrimp, roasted peppers, roasted corn, mixed greens, avocado and Asian Sesame dressing</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dinner Entrees -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Dinner Entrees</h2>
+              <p>Add a cup of house made soup or a house salad to any dinner entrée for $2.00</p>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Braised Short Ribs or Pot Roast</h3>
+                  <span class="menu-item-price">$19</span>
+                </div>
+                <p>Fork tender, slow cooked, rich beef bone gravy, mashed potatoes, chef select vegetables</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Fish & Chips</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Crispy battered cod tempura, house slaw, French fries</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Fresh Roasted Turkey</h3>
+                  <span class="menu-item-price">$18</span>
+                </div>
+                <p>Hand carved, stuffing, potatoes, house vegetables, cranberries</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Grilled Flank Steak</h3>
+                  <span class="menu-item-price">$19</span>
+                </div>
+                <p>Topped with sautéed mushrooms, home made gravy, mashed potatoes, chef's veggies</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Creamy Mac & Cheese</h3>
+                  <span class="menu-item-price">$13</span>
+                </div>
+                <p>Three cheese blend, small shells. Add buffalo chicken $5 | add short ribs $6 | add sweet chili shrimp $7</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Bourbon Steak Tips</h3>
+                  <span class="menu-item-price">$22</span>
+                </div>
+                <p>Marinated and grilled tips, caramelized onions, mushrooms, bourbon demi sauce, mashed potatoes</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Broiled Salmon</h3>
+                  <span class="menu-item-price">$24</span>
+                </div>
+                <p>Served with potato and chef's daily vegetable</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Chicken Parm</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Hand breaded chicken fillet, marinara, melted mozzarella, pasta</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Honey Stung Fried Chicken</h3>
+                  <span class="menu-item-price">$15</span>
+                </div>
+                <p>Southern fried chicken pieces, honey sriracha drizzle, biscuit, coleslaw & fries</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>House-Made Meatloaf</h3>
+                  <span class="menu-item-price">$15</span>
+                </div>
+                <p>Slow cooked house blend, tangy glaze, mashed potatoes, house vegetable</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Chicken Penne Ala Vodka</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Creamy vodka sauce, crispy chicken breast, penne pasta</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- GREEK TAB -->
+        <div class="menu-tab-content" id="greek">
+
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>It's All Greek To Us</h2>
+              <p>Authentic Greek specialties made with traditional recipes</p>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Spanakopita</h3>
+                  <span class="menu-item-price">$15</span>
+                </div>
+                <p class="vegetarian">Spinach & feta cheese wrapped in filo dough</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Chicken Souvlaki</h3>
+                  <span class="menu-item-price">$14.50</span>
+                </div>
+                <p>Feta, olives, tomatoes, red onions, tzatziki, warm pita, with fries, slaw & pickle</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Moussaka</h3>
+                  <span class="menu-item-price">$18</span>
+                </div>
+                <p>Layers of eggplant & ground beef, sliced potatoes, cheese soufflé topping</p>
+              </div>
+              <div class="menu-item featured">
+                <div class="menu-item-header">
+                  <h3>Greek Sampler</h3>
+                  <span class="menu-item-price">$23</span>
+                </div>
+                <p>Pita, tzatziki, kalamata olives, grape leaves, moussaka, chicken souvlaki, gyro, feta cheese</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Beef & Lamb Gyro</h3>
+                  <span class="menu-item-price">$14.50</span>
+                </div>
+                <p>Warm pita, lettuce, tomatoes, red onions, tzatziki sauce, with fries, slaw & pickle</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Greek Vegetarian Platter</h3>
+                  <span class="menu-item-price">$12.50</span>
+                </div>
+                <p class="vegetarian">Spinach pie, feta cheese, tomatoes, red onion, grape leaves, roasted peppers, kalamata olives, pita, tzatziki</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Zorba Wrap</h3>
+                  <span class="menu-item-price">$16</span>
+                </div>
+                <p>Gyro meat, grilled chicken, tzatziki, lettuce, tomato, onion</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- DRINKS TAB -->
+        <div class="menu-tab-content" id="drinks">
+
+          <!-- Beverages -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Beverages</h2>
+            </div>
+            <div class="menu-items menu-items-grid menu-items-compact">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Hot Coffee</h3>
+                  <span class="menu-item-price">$3.50</span>
+                </div>
+                <p>Regular | decaf - bottomless, fresh ground</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Iced Coffee</h3>
+                  <span class="menu-item-price">$4.25</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Hot Tea</h3>
+                  <span class="menu-item-price">$3.25</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Hot Herbal Tea</h3>
+                  <span class="menu-item-price">$3.25</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Hot Cocoa</h3>
+                  <span class="menu-item-price">$3.50</span>
+                </div>
+                <p>With whipped cream</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Cappuccino</h3>
+                  <span class="menu-item-price">$5</span>
+                </div>
+                <p>Classic or flavored</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Iced Cappuccino</h3>
+                  <span class="menu-item-price">$5</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Double Espresso</h3>
+                  <span class="menu-item-price">$4</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Café Americano</h3>
+                  <span class="menu-item-price">$4</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Soda</h3>
+                  <span class="menu-item-price">$3</span>
+                </div>
+                <p>16oz</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Old Fashioned Lemonade</h3>
+                  <span class="menu-item-price">$3</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Unsweetened Iced Tea</h3>
+                  <span class="menu-item-price">$3</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Juice</h3>
+                  <span class="menu-item-price">$4</span>
+                </div>
+                <p>Orange | Apple | Cranberry | Pineapple | Grapefruit | Tomato $2.50</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Smoothies -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Smoothies</h2>
+              <p>$7 each - Fresh & Delicious | 100% Fruit | All Natural | Non GMO | Gluten Free | ZERO Additives</p>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Strawberry Banana Blast</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+                <p>Strawberry, Banana & Orange Juice</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Berry Good Breakfast</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+                <p>Strawberry, Blueberry, Banana & Almond Milk</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Specialty Shakes -->
+          <div class="menu-category">
+            <div class="menu-category-header">
+              <h2>Specialty Shakes</h2>
+              <p>$7 each</p>
+            </div>
+            <div class="menu-items menu-items-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Pick-Me-Up</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+                <p>Vanilla ice cream, espresso, Oreo cookie</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Peppermint Patty</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+                <p>Mint chocolate chip ice cream, chocolate syrup</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Death by Chocolate</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+                <p>Chocolate ice cream, chocolate chips, chocolate syrup</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>German Chocolate</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+                <p>Coconut cream, chocolate ice cream, toasted coconut</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Reese's Pieces</h3>
+                  <span class="menu-item-price">$7</span>
+                </div>
+                <p>Vanilla ice cream, peanut butter, Reese's pieces, chocolate syrup</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner-content">
+        <h2>Ready to Order?</h2>
+        <p>Skip the wait and order online for pickup or delivery!</p>
+        <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/v3" class="btn btn-secondary" target="_blank">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">Parthenon</span>
+            <span class="logo-subtitle">Diner & Restaurant</span>
+          </a>
+          <p>Serving the Connecticut Shoreline with classic American comfort food and authentic Greek specialties since 1985.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/parthenon.diner/" class="footer-social-link" target="_blank" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/parthenonbranford/" class="footer-social-link" target="_blank" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/parthenondiner" class="footer-social-link" target="_blank" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="menu.html" class="footer-link">Menu</a>
+            <a href="index.html#about" class="footer-link">About Us</a>
+            <a href="index.html#locations" class="footer-link">Locations</a>
+            <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/giftcards" class="footer-link" target="_blank">Gift Cards</a>
+            <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/rewardsSignup" class="footer-link" target="_blank">Rewards</a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title">Menu</h4>
+          <div class="footer-links">
+            <a href="menu.html#breakfast" class="footer-link">Breakfast</a>
+            <a href="menu.html#lunch" class="footer-link">Lunch</a>
+            <a href="menu.html#dinner" class="footer-link">Dinner</a>
+            <a href="menu.html#greek" class="footer-link">Greek Specialties</a>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>374 E Main St, Branford, CT<br>809 Boston Post Rd, Old Saybrook, CT</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Branford: (203) 481-0333<br>Old Saybrook: (860) 395-5111</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2025 Parthenon Diner and Restaurant. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
