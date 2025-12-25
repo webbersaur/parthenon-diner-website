@@ -75,6 +75,7 @@ body {
   background-color: var(--color-cream);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* Subtle paper texture overlay */
@@ -447,14 +448,16 @@ p {
   height: 100vh;
   background-color: var(--color-white);
   padding: 6rem var(--space-lg) var(--space-lg);
-  transition: transform var(--transition-normal);
+  transition: transform var(--transition-normal), visibility var(--transition-normal);
   transform: translateX(100%);
+  visibility: hidden;
   box-shadow: var(--shadow-lg);
   z-index: 999;
 }
 
 .mobile-nav.active {
   transform: translateX(0);
+  visibility: visible;
 }
 
 .mobile-nav-list {
