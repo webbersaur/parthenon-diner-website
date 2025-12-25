@@ -361,7 +361,8 @@ p {
 }
 
 .order-dropdown:hover .order-dropdown-menu,
-.order-dropdown:focus-within .order-dropdown-menu {
+.order-dropdown:focus-within .order-dropdown-menu,
+.order-dropdown.active .order-dropdown-menu {
   opacity: 1;
   visibility: visible;
 }

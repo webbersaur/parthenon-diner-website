@@ -162,12 +162,59 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', highlightActiveNav, { passive: true });
 
   // ============================================
+  // Order Dropdown Click-to-Toggle
+  // ============================================
+  const orderDropdowns = document.querySelectorAll('.order-dropdown');
+
+  orderDropdowns.forEach(dropdown => {
+    const button = dropdown.querySelector('button');
+    const menu = dropdown.querySelector('.order-dropdown-menu');
+
+    // Toggle dropdown on button click
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+
+      // Close other dropdowns first
+      orderDropdowns.forEach(other => {
+        if (other !== dropdown) {
+          other.classList.remove('active');
+        }
+      });
+
+      dropdown.classList.toggle('active');
+    });
+
+    // Close when clicking a menu link
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        dropdown.classList.remove('active');
+      });
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    orderDropdowns.forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('active');
+      }
+    });
+  });
+
+  // ============================================
   // Keyboard Navigation
   // ============================================
   document.addEventListener('keydown', (e) => {
     // Close mobile menu on Escape
     if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
       closeMobileMenu();
+    }
+
+    // Close dropdowns on Escape
+    if (e.key === 'Escape') {
+      orderDropdowns.forEach(dropdown => {
+        dropdown.classList.remove('active');
+      });
     }
   });
 
