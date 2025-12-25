@@ -441,19 +441,20 @@ p {
 .mobile-nav {
   position: fixed;
   top: 0;
-  right: -100%;
+  right: 0;
   width: 100%;
   max-width: 400px;
   height: 100vh;
   background-color: var(--color-white);
   padding: 6rem var(--space-lg) var(--space-lg);
-  transition: right var(--transition-normal);
+  transition: transform var(--transition-normal);
+  transform: translateX(100%);
   box-shadow: var(--shadow-lg);
   z-index: 999;
 }
 
 .mobile-nav.active {
-  right: 0;
+  transform: translateX(0);
 }
 
 .mobile-nav-list {
