@@ -64,6 +64,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -506,7 +507,8 @@ p {
   align-items: center;
   padding-top: 80px;
   position: relative;
-  overflow: visible;
+  overflow-x: clip;
+  overflow-y: visible;
   background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 100%);
 }
 
