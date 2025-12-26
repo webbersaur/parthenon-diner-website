@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Parthenon Diner - Family owned and operated since 1985. Award-winning classic American diner with Greek specialties in Branford and Old Saybrook, CT.">
+  <title>About Us | Parthenon Diner</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* About Page Specific Styles */
+    .about-hero {
+      padding: 140px 0 60px;
+      background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238B1538' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .about-hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: var(--space-sm);
+      color: var(--color-charcoal);
+    }
+
+    .about-hero p {
+      font-size: 1.125rem;
+      color: var(--color-gray);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .about-main {
+      padding: var(--space-3xl) 0;
+      background-color: var(--color-white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-2xl);
+      align-items: start;
+    }
+
+    @media (min-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .about-message {
+      background-color: var(--color-cream);
+      padding: var(--space-xl);
+      border-radius: var(--radius-lg);
+      border-left: 4px solid var(--color-primary);
+    }
+
+    .about-message p {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: var(--color-charcoal-light);
+      margin-bottom: var(--space-md);
+    }
+
+    .about-message p:last-child {
+      margin-bottom: 0;
+    }
+
+    .about-message .signature {
+      font-family: var(--font-heading);
+      font-style: italic;
+      color: var(--color-primary);
+      font-size: 1.125rem;
+      margin-top: var(--space-md);
+    }
+
+    .about-videos {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+
+    .about-video {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about-video iframe,
+    .about-video video {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: none;
+      display: block;
+    }
+
+    .awards-section {
+      padding: var(--space-2xl) 0;
+      background-color: var(--color-cream);
+      text-align: center;
+    }
+
+    .awards-content h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--color-charcoal);
+      margin-bottom: var(--space-lg);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .awards-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: var(--space-xl);
+      margin-top: var(--space-xl);
+    }
+
+    .awards-logos a {
+      display: block;
+      opacity: 0.8;
+      transition: opacity var(--transition-fast);
+    }
+
+    .awards-logos a:hover {
+      opacity: 1;
+    }
+
+    .awards-logos img {
+      max-height: 80px;
+      width: auto;
+    }
+
+    .awards-main-logo {
+      margin-bottom: var(--space-lg);
+      display: flex;
+      justify-content: center;
+    }
+
+    .awards-main-logo img {
+      max-height: 160px;
+      width: auto;
+    }
+
+    .awards-image {
+      margin-top: var(--space-xl);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .awards-image img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .values-section {
+      padding: var(--space-3xl) 0;
+      background-color: var(--color-white);
+    }
+
+    .values-header {
+      text-align: center;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-lg);
+    }
+
+    .value-card {
+      text-align: center;
+      padding: var(--space-xl);
+      background-color: var(--color-cream);
+      border-radius: var(--radius-lg);
+      transition: all var(--transition-normal);
+    }
+
+    .value-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .value-card-icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-primary);
+      border-radius: 50%;
+      margin: 0 auto var(--space-md);
+      color: var(--color-white);
+    }
+
+    .value-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: var(--space-sm);
+      color: var(--color-charcoal);
+    }
+
+    .value-card p {
+      color: var(--color-gray);
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-text">Parthenon</span>
+        <span class="logo-subtitle">Diner & Restaurant</span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="index.html#locations" class="nav-link">Locations</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          <li class="nav-cta">
+            <div class="order-dropdown">
+              <button class="btn btn-primary">Order Now</button>
+              <div class="order-dropdown-menu">
+                <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/v3" target="_blank">
+                  <span class="location-name">Branford</span>
+                  <span class="location-address">374 E Main St</span>
+                </a>
+                <a href="https://direct.chownow.com/order/28436/locations/42090" target="_blank">
+                  <span class="location-name">Old Saybrook</span>
+                  <span class="location-address">809 Boston Post Rd</span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-list">
+      <li><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="index.html#locations" class="mobile-nav-link">Locations</a></li>
+      <li><a href="index.html#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <p class="mobile-order-label">Order Online</p>
+      <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/v3" class="btn btn-secondary" target="_blank" style="width: 100%;">Branford</a>
+      <a href="https://direct.chownow.com/order/28436/locations/42090" class="btn btn-secondary" target="_blank" style="width: 100%;">Old Saybrook</a>
+    </div>
+    <div class="mobile-nav-cta">
+      <p class="mobile-order-label">Call Now</p>
+      <a href="tel:203-481-0333" class="btn btn-secondary" style="width: 100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        Branford
+      </a>
+      <a href="tel:860-395-5111" class="btn btn-secondary" style="width: 100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        Old Saybrook
+      </a>
+    </div>
+  </nav>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="about-hero-content">
+        <span class="section-label">About Us</span>
+        <h1>A Family Tradition Since 1985</h1>
+        <p>Quality and consistency, great prices, and friendly service is what makes us special.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Main Content -->
+  <section class="about-main">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-message">
+          <p>Please accept our appreciation and sincere thanks for letting us serve you. Sometimes in the rush of business life, we fail to say THANKS loud enough. But you can be sure your patronage is never taken for granted. Our aim is to please and satisfy. To serve you is a real privilege and pleasure.</p>
+          <p>Quality and consistency, great prices, and friendly service is what makes the award winning, family owned and operated Diner Hospitality Group so special.</p>
+          <p>Thanks for stopping by to see our website. Take a look around. Check out our <a href="menu.html" style="color: var(--color-primary); font-weight: 600;">menu page</a> to see an up to date list of what we're offering. If you think that you will have trouble finding us, check out our <a href="index.html#locations" style="color: var(--color-primary); font-weight: 600;">Locations</a> for a map and directions on how to find us. Come see what we're all about!</p>
+          <p class="signature">— The Parthenon Family</p>
+        </div>
+        <div class="about-videos">
+          <div class="about-video">
+            <iframe
+              src="https://www.youtube.com/embed/OmEb0RbcKGY"
+              title="Foodie Friday: Parthenon Diner in Branford, Connecticut"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="about-video">
+            <video controls playsinline>
+              <source src="https://parthenondiner.com/wp-content/uploads/2022/01/Branford-SHORT-VIDEO1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="values-section">
+    <div class="container">
+      <div class="values-header">
+        <span class="section-label">Our Values</span>
+        <h2>What Makes Us Special</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Quality Ingredients</h3>
+          <p>We use only the freshest ingredients, sourced locally when possible, to create dishes that taste like home.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Family Owned</h3>
+          <p>For nearly four decades, our family has been serving the Connecticut Shoreline community with pride.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h3>Made with Love</h3>
+          <p>Every dish is prepared with care and attention, just like you'd make it at home for your own family.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Award Winning</h3>
+          <p>Recognized as a community partner in the Shoreline Chamber Excellence Awards. We are honored and humbled!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards Section -->
+  <section class="awards-section">
+    <div class="container">
+      <div class="awards-content">
+        <div class="awards-main-logo">
+          <a href="http://dinerhospitalitygroup.com/" target="_blank">
+            <img src="https://cdn-emdkh.nitrocdn.com/sbtPsVQlRhhoxwIfnFQRkwyPlIecOEQr/assets/images/optimized/rev-59d9d5c/parthenondiner.com/wp-content/uploads/2022/01/DINER-1.png" alt="Diner Hospitality Group">
+          </a>
+        </div>
+        <h2>Thank you for recognizing the Parthenon Diner Restaurant as a community partner in the Shoreline Chamber Excellence Awards.</h2>
+        <div class="awards-image">
+          <img src="https://cdn-emdkh.nitrocdn.com/sbtPsVQlRhhoxwIfnFQRkwyPlIecOEQr/assets/images/optimized/rev-59d9d5c/parthenondiner.com/wp-content/uploads/2024/02/428685491_965893088412371_7407859372599116261_n.jpg" alt="Shoreline Chamber Excellence Awards - Parthenon Diner recognized as community partner">
+        </div>
+        <div class="awards-logos">
+          <a href="http://tourismct.com/" target="_blank">
+            <img src="https://parthenondiner.com/wp-content/uploads/2023/08/ctc-logo.png" alt="Connecticut Tourism">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner-content">
+        <h2>Ready to Experience Parthenon?</h2>
+        <p>Visit us today and taste the difference that nearly 40 years of tradition makes!</p>
+        <a href="menu.html" class="btn btn-secondary">View Our Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">Parthenon</span>
+            <span class="logo-subtitle">Diner & Restaurant</span>
+          </a>
+          <p>Serving the Connecticut Shoreline with classic American comfort food and authentic Greek specialties since 1985.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/parthenon.diner/" class="footer-social-link" target="_blank" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/parthenonbranford/" class="footer-social-link" target="_blank" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/parthenondiner" class="footer-social-link" target="_blank" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="menu.html" class="footer-link">Menu</a>
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="index.html#locations" class="footer-link">Locations</a>
+            <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/giftcards" class="footer-link" target="_blank">Gift Cards</a>
+            <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/rewardsSignup" class="footer-link" target="_blank">Rewards</a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title">Menu</h4>
+          <div class="footer-links">
+            <a href="menu.html#breakfast" class="footer-link">Breakfast</a>
+            <a href="menu.html#lunch" class="footer-link">Lunch</a>
+            <a href="menu.html#dinner" class="footer-link">Dinner</a>
+            <a href="menu.html#greek" class="footer-link">Greek Specialties</a>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>374 E Main St, Branford, CT<br>809 Boston Post Rd, Old Saybrook, CT</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Branford: (203) 481-0333<br>Old Saybrook: (860) 395-5111</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2025 Parthenon Diner and Restaurant. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
