@@ -223,6 +223,27 @@ p {
   transform: translateY(-2px);
 }
 
+.btn-gift {
+  background-color: var(--color-accent);
+  color: var(--color-charcoal);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-gift:hover {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent-light);
+  transform: translateY(-2px);
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
 .btn-accent {
   background-color: var(--color-accent);
   color: var(--color-charcoal);
@@ -1238,6 +1259,164 @@ p {
   .menu-card-image {
     height: 180px;
   }
+}
+
+/* ---------- Gift Cards Section ---------- */
+.gift-cards-section {
+  background-color: var(--color-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.gift-cards-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C4A35A' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.gift-cards-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .gift-cards-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.gift-cards-text h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: var(--space-md);
+  color: var(--color-charcoal);
+}
+
+.gift-cards-text p {
+  color: var(--color-gray);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+}
+
+.gift-cards-features {
+  list-style: none;
+  margin-bottom: var(--space-xl);
+}
+
+.gift-cards-features li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  color: var(--color-charcoal);
+  font-weight: 500;
+}
+
+.gift-cards-features li svg {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.gift-cards-text .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gift-cards-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gift-card-visual {
+  perspective: 1000px;
+}
+
+.gift-card-front {
+  width: 320px;
+  height: 200px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-lg);
+  transform: rotateY(-5deg) rotateX(5deg);
+  transition: transform var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.gift-card-front::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+}
+
+.gift-card-front:hover {
+  transform: rotateY(0deg) rotateX(0deg);
+}
+
+.gift-card-logo {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-white);
+  letter-spacing: 0.05em;
+  position: relative;
+  z-index: 1;
+}
+
+.gift-card-subtitle {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+  position: relative;
+  z-index: 1;
+}
+
+.gift-card-tagline {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-accent);
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer Gift Card Highlight */
+.footer-link-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-accent) !important;
+  font-weight: 600;
+}
+
+.footer-link-highlight:hover {
+  color: var(--color-accent-light) !important;
+}
+
+.footer-link-highlight svg {
+  flex-shrink: 0;
 }
 
 /* Large Desktop (1200px and up) */
