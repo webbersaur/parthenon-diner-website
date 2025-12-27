@@ -7,10 +7,16 @@
   <meta name="description" content="Parthenon Diner - Classic American diner with Greek specialties. Serving Branford and Old Saybrook, CT since 1985. Breakfast served all day.">
   <title>Parthenon Diner | Classic American Diner with Greek Specialties</title>
 
-  <!-- Fonts -->
+  <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <!-- Preload hero image (LCP element) -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=600&h=500&fit=crop" fetchpriority="high">
+
+  <!-- Fonts - reduced weights for faster loading -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
@@ -130,7 +136,7 @@
         </div>
         <div class="hero-image">
           <div class="hero-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=600&h=500&fit=crop" alt="Delicious breakfast spread with eggs, bacon, and fresh ingredients">
+            <img src="https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=600&h=500&fit=crop" alt="Delicious breakfast spread with eggs, bacon, and fresh ingredients" width="600" height="500" fetchpriority="high">
             <div class="hero-image-badge">
               <span>Serving Since</span>
               <strong>1985</strong>
@@ -146,7 +152,7 @@
     <div class="container">
       <div class="about-content">
         <div class="about-image animate-on-scroll">
-          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop" alt="Warm diner interior with friendly atmosphere">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop" alt="Warm diner interior with friendly atmosphere" width="600" height="400" loading="lazy">
         </div>
         <div class="about-text animate-on-scroll">
           <span class="section-label">Our Story</span>
@@ -213,7 +219,7 @@
         <!-- Breakfast Card -->
         <div class="menu-card animate-on-scroll">
           <div class="menu-card-image">
-            <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=300&fit=crop" alt="Breakfast eggs and bacon">
+            <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=300&fit=crop" alt="Breakfast eggs and bacon" width="400" height="300" loading="lazy">
             <div class="menu-card-overlay"></div>
             <span class="menu-card-category">Breakfast</span>
           </div>
@@ -244,7 +250,7 @@
         <!-- Lunch Card -->
         <div class="menu-card animate-on-scroll">
           <div class="menu-card-image">
-            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="Gourmet burger">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="Gourmet burger" width="400" height="300" loading="lazy">
             <div class="menu-card-overlay"></div>
             <span class="menu-card-category">Lunch</span>
           </div>
@@ -275,7 +281,7 @@
         <!-- Dinner Card -->
         <div class="menu-card animate-on-scroll">
           <div class="menu-card-image">
-            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop" alt="Grilled steak dinner">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop" alt="Grilled steak dinner" width="400" height="300" loading="lazy">
             <div class="menu-card-overlay"></div>
             <span class="menu-card-category">Dinner</span>
           </div>
@@ -306,7 +312,7 @@
         <!-- Greek Card -->
         <div class="menu-card animate-on-scroll">
           <div class="menu-card-image">
-            <img src="https://images.unsplash.com/photo-1529059997568-3d847b1154f0?w=400&h=300&fit=crop" alt="Greek gyro platter">
+            <img src="https://images.unsplash.com/photo-1529059997568-3d847b1154f0?w=400&h=300&fit=crop" alt="Greek gyro platter" width="400" height="300" loading="lazy">
             <div class="menu-card-overlay"></div>
             <span class="menu-card-category">Greek</span>
           </div>
@@ -354,7 +360,8 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.8!2d-72.8153!3d41.2784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7d85c4d32fc1b%3A0x4d3b4f6a0b3c0e1a!2s374%20E%20Main%20St%2C%20Branford%2C%20CT%2006405!5e0!3m2!1sen!2sus!4v1703123456789!5m2!1sen!2sus"
               allowfullscreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map showing Branford location">
             </iframe>
           </div>
           <div class="location-info">
@@ -391,7 +398,8 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.8!2d-72.3653!3d41.2884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7d85c4d32fc1b%3A0x4d3b4f6a0b3c0e1a!2s809%20Boston%20Post%20Rd%2C%20Old%20Saybrook%2C%20CT!5e0!3m2!1sen!2sus!4v1703123456789!5m2!1sen!2sus"
               allowfullscreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map showing Old Saybrook location">
             </iframe>
           </div>
           <div class="location-info">
