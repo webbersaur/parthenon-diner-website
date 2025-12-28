@@ -10,13 +10,13 @@
   <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com">
 
   <!-- Preload hero image (LCP element) -->
-  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=600&h=500&fit=crop" fetchpriority="high">
+  <link rel="preload" as="image" href="parthenon-hero-food.jpeg" fetchpriority="high">
 
   <!-- Fonts - reduced weights for faster loading -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"></noscript>
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
@@ -136,7 +136,7 @@
         </div>
         <div class="hero-image">
           <div class="hero-image-wrapper">
-            <img src="parthenon-hero-food.jpeg" alt="Delicious food at Parthenon Diner" width="600" height="500" fetchpriority="high">
+            <img src="parthenon-hero-food.jpeg" alt="Delicious food at Parthenon Diner" width="800" height="1023" fetchpriority="high">
             <div class="hero-image-badge">
               <span>Serving Since</span>
               <strong>1985</strong>
@@ -152,7 +152,7 @@
     <div class="container">
       <div class="about-content">
         <div class="about-image animate-on-scroll">
-          <img src="egss benedict.jpg" alt="Eggs Benedict at Parthenon Diner" width="600" height="400" loading="lazy">
+          <img src="egss benedict.jpg" alt="Eggs Benedict at Parthenon Diner" width="800" height="533" loading="lazy">
         </div>
         <div class="about-text animate-on-scroll">
           <span class="section-label">Our Story</span>
@@ -390,7 +390,7 @@
               <a href="https://www.google.com/maps/dir//374+E+Main+St,+Branford,+CT+06405" class="btn btn-secondary" target="_blank">Get Directions</a>
             </div>
             <div class="location-image">
-              <img src="Parthenon-outside.jpg" alt="Parthenon Diner Branford exterior" loading="lazy">
+              <img src="Parthenon-outside.jpg" alt="Parthenon Diner Branford exterior" width="500" height="281" loading="lazy">
             </div>
           </div>
         </div>
@@ -432,7 +432,7 @@
               <a href="https://www.google.com/maps/dir//809+Boston+Post+Rd,+Old+Saybrook,+CT" class="btn btn-secondary" target="_blank">Get Directions</a>
             </div>
             <div class="location-image">
-              <img src="old-saybrook.jpg" alt="Parthenon Diner Old Saybrook exterior" loading="lazy">
+              <img src="old-saybrook.jpg" alt="Parthenon Diner Old Saybrook exterior" width="500" height="281" loading="lazy">
             </div>
           </div>
         </div>
@@ -596,6 +596,6 @@
   </footer>
 
   <!-- JavaScript -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
