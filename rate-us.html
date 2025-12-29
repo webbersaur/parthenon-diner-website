@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rate your experience at Parthenon Diner - We'd love to hear from you!">
+  <title>Rate Your Experience | Parthenon Diner</title>
+
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/feedback.css">
+
+  <style>
+    /* Page-specific styles for the rate-us landing */
+    body {
+      background: linear-gradient(135deg, var(--color-primary-dark) 0%, #5a0f23 50%, #4a0c1d 100%);
+      min-height: 100vh;
+    }
+
+    body::before {
+      display: none;
+    }
+
+    .rate-us-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-xl);
+    }
+
+    /* Override modal to always be visible on this page */
+    .feedback-modal-overlay {
+      position: relative;
+      background: transparent;
+      opacity: 1;
+      visibility: visible;
+      padding: 0;
+    }
+
+    .feedback-modal {
+      transform: none;
+      max-width: 550px;
+    }
+
+    .feedback-modal-close {
+      display: none;
+    }
+
+    .brand-header {
+      margin-bottom: var(--space-lg);
+    }
+
+    .brand-header .logo {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .brand-header .logo-text {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+    }
+
+    .brand-header .logo-subtitle {
+      color: var(--color-gray);
+    }
+  </style>
+</head>
+<body>
+  <main class="rate-us-page">
+    <div class="feedback-modal-overlay active">
+      <div class="feedback-modal">
+        <!-- Brand Header -->
+        <div class="brand-header">
+          <a href="index.html" class="logo">
+            <span class="logo-text">Parthenon</span>
+            <span class="logo-subtitle">Diner & Restaurant</span>
+          </a>
+        </div>
+
+        <h1 class="feedback-modal-title">How Was Your Experience?</h1>
+        <p class="feedback-modal-subtitle">We value your feedback and would love to hear about your visit.</p>
+
+        <div class="feedback-modal-buttons">
+          <a href="feedback.html" class="feedback-btn feedback-btn-happy">
+            <span class="feedback-btn-icon">😊</span>
+            <span class="feedback-btn-text">Happy</span>
+          </a>
+          <a href="not-happy.html" class="feedback-btn feedback-btn-not-happy">
+            <span class="feedback-btn-icon">😔</span>
+            <span class="feedback-btn-text">Not Happy</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

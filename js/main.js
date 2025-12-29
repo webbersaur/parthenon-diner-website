@@ -288,6 +288,59 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ============================================
+  // Rate Us Modal
+  // ============================================
+  const rateUsModal = document.getElementById('rateUsModal');
+  const openRateUsBtn = document.getElementById('openRateUsModal');
+  const closeRateUsBtn = document.getElementById('closeRateUsModal');
+
+  function openRateUsModal() {
+    if (rateUsModal) {
+      rateUsModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeRateUsModal() {
+    if (rateUsModal) {
+      rateUsModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+
+  // Open modal on button click
+  if (openRateUsBtn) {
+    openRateUsBtn.addEventListener('click', openRateUsModal);
+  }
+
+  // Also open modal from footer button
+  const footerRateUsBtn = document.getElementById('footerRateUsBtn');
+  if (footerRateUsBtn) {
+    footerRateUsBtn.addEventListener('click', openRateUsModal);
+  }
+
+  // Close modal on X button click
+  if (closeRateUsBtn) {
+    closeRateUsBtn.addEventListener('click', closeRateUsModal);
+  }
+
+  // Close modal when clicking overlay background
+  if (rateUsModal) {
+    rateUsModal.addEventListener('click', (e) => {
+      if (e.target === rateUsModal) {
+        closeRateUsModal();
+      }
+    });
+  }
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && rateUsModal && rateUsModal.classList.contains('active')) {
+      closeRateUsModal();
+    }
+  });
+
+  // ============================================
   // Console Greeting
   // ============================================
   console.log(

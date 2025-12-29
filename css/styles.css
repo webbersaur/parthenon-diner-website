@@ -962,6 +962,201 @@ p {
   object-fit: cover;
 }
 
+/* ---------- Rate Us Section ---------- */
+.rate-us-section {
+  background-color: var(--color-cream-dark);
+  padding: var(--space-2xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.rate-us-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .rate-us-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.rate-us-text h2 {
+  font-family: var(--font-heading);
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-sm);
+}
+
+.rate-us-text p {
+  color: var(--color-gray);
+  font-size: 1.0625rem;
+  margin-bottom: var(--space-lg);
+  max-width: 500px;
+}
+
+.rate-us-text .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rate-us-emojis {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.rate-us-emojis span {
+  font-size: 3.5rem;
+  transition: transform var(--transition-normal);
+}
+
+.rate-us-emojis .emoji-happy:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.rate-us-emojis .emoji-sad:hover {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+@media (min-width: 768px) {
+  .rate-us-emojis span {
+    font-size: 4.5rem;
+  }
+}
+
+/* ---------- Rate Us Popup Modal ---------- */
+.rate-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: var(--space-md);
+}
+
+.rate-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.rate-modal {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  position: relative;
+  transform: scale(0.8) translateY(-20px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.rate-modal-overlay.active .rate-modal {
+  transform: scale(1) translateY(0);
+}
+
+.rate-modal-close {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-cream);
+  border: none;
+  border-radius: 50%;
+  color: var(--color-gray);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rate-modal-close:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.rate-modal-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+.rate-modal-subtitle {
+  color: var(--color-gray);
+  font-size: 0.9375rem;
+  margin-bottom: var(--space-lg);
+}
+
+.rate-modal-buttons {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+}
+
+.rate-modal-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.rate-modal-btn-happy {
+  background-color: #4CAF50;
+  color: var(--color-white);
+}
+
+.rate-modal-btn-happy:hover {
+  background-color: #43A047;
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+}
+
+.rate-modal-btn-sad {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.rate-modal-btn-sad:hover {
+  background-color: var(--color-primary-dark);
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(139, 21, 56, 0.4);
+}
+
+.rate-modal-btn-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-xs);
+}
+
+.rate-modal-btn-text {
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* ---------- CTA Banner ---------- */
 .cta-banner {
   background-color: var(--color-primary);
@@ -1060,6 +1255,15 @@ p {
 
 .footer-link:hover {
   color: var(--color-accent);
+}
+
+.footer-rate-us-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .footer-contact-item {

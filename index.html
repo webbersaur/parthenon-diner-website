@@ -494,6 +494,28 @@
     </div>
   </section>
 
+  <!-- Rate Us Section -->
+  <section class="rate-us-section">
+    <div class="container">
+      <div class="rate-us-content">
+        <div class="rate-us-text">
+          <h2>How Was Your Experience?</h2>
+          <p>Your feedback means the world to us! Let us know how we did so we can continue serving you better.</p>
+          <button type="button" class="btn btn-secondary btn-lg" id="openRateUsModal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            Rate Us
+          </button>
+        </div>
+        <div class="rate-us-emojis">
+          <span class="emoji-happy">😊</span>
+          <span class="emoji-sad">😔</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA Banner -->
   <section class="cta-banner" id="contact">
     <div class="container">
@@ -553,6 +575,7 @@
               Gift Cards
             </a>
             <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/rewardsSignup" class="footer-link" target="_blank">Rewards</a>
+            <button type="button" class="footer-link footer-rate-us-btn" id="footerRateUsBtn">Rate Us</button>
           </div>
         </div>
 
@@ -593,6 +616,30 @@
       </div>
     </div>
   </footer>
+
+  <!-- Rate Us Modal -->
+  <div class="rate-modal-overlay" id="rateUsModal">
+    <div class="rate-modal">
+      <button type="button" class="rate-modal-close" id="closeRateUsModal" aria-label="Close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <h2 class="rate-modal-title">How Was Your Experience?</h2>
+      <p class="rate-modal-subtitle">We value your feedback!</p>
+      <div class="rate-modal-buttons">
+        <a href="feedback.html" class="rate-modal-btn rate-modal-btn-happy">
+          <span class="rate-modal-btn-icon">😊</span>
+          <span class="rate-modal-btn-text">Happy</span>
+        </a>
+        <a href="not-happy.html" class="rate-modal-btn rate-modal-btn-sad">
+          <span class="rate-modal-btn-icon">😔</span>
+          <span class="rate-modal-btn-text">Not Happy</span>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- JavaScript -->
   <script src="js/main.js" defer></script>
