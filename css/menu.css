@@ -55,6 +55,13 @@
   color: var(--color-accent);
 }
 
+.menu-hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
 /* ---------- Menu Section ---------- */
 .menu-section {
   padding: var(--space-xl) 0 var(--space-3xl);
