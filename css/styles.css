@@ -1264,6 +1264,7 @@ p {
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
+  text-align: left;
 }
 
 .footer-contact-item {
