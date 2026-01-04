@@ -82,24 +82,14 @@
       background-color: var(--color-white);
     }
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--space-2xl);
-      align-items: start;
-    }
-
-    @media (min-width: 768px) {
-      .about-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
     .about-message {
       background-color: var(--color-cream);
       padding: var(--space-xl);
       border-radius: var(--radius-lg);
       border-left: 4px solid var(--color-primary);
+      max-width: 900px;
+      margin: 0 auto;
+      overflow: hidden;
     }
 
     .about-message p {
@@ -121,20 +111,23 @@
       margin-top: var(--space-md);
     }
 
-    .about-videos {
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-lg);
-    }
-
     .about-video {
       border-radius: var(--radius-lg);
       overflow: hidden;
       box-shadow: var(--shadow-lg);
+      margin-bottom: var(--space-lg);
     }
 
-    .about-video iframe,
-    .about-video video {
+    @media (min-width: 768px) {
+      .about-video {
+        float: right;
+        width: 50%;
+        margin-left: var(--space-lg);
+        margin-bottom: var(--space-md);
+      }
+    }
+
+    .about-video iframe {
       width: 100%;
       aspect-ratio: 16/9;
       border: none;
@@ -365,29 +358,19 @@
   <!-- About Main Content -->
   <section class="about-main">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-message">
-          <p>Please accept our appreciation and sincere thanks for letting us serve you. Sometimes in the rush of business life, we fail to say THANKS loud enough. But you can be sure your patronage is never taken for granted. Our aim is to please and satisfy. To serve you is a real privilege and pleasure.</p>
-          <p>Quality and consistency, great prices, and friendly service is what makes the award winning, family owned and operated Diner Hospitality Group so special.</p>
-          <p>Thanks for stopping by to see our website. Take a look around. Check out our <a href="/menu" style="color: var(--color-primary); font-weight: 600;">menu page</a> to see an up to date list of what we're offering. If you think that you will have trouble finding us, check out our <a href="/#locations" style="color: var(--color-primary); font-weight: 600;">Locations</a> for a map and directions on how to find us. Come see what we're all about!</p>
-          <p class="signature">— The Parthenon Family</p>
+      <div class="about-message">
+        <div class="about-video">
+          <iframe
+            src="https://www.youtube.com/embed/OmEb0RbcKGY"
+            title="Foodie Friday: Parthenon Diner in Branford, Connecticut"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
         </div>
-        <div class="about-videos">
-          <div class="about-video">
-            <iframe
-              src="https://www.youtube.com/embed/OmEb0RbcKGY"
-              title="Foodie Friday: Parthenon Diner in Branford, Connecticut"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="about-video">
-            <video controls playsinline>
-              <source src="https://parthenondiner.com/wp-content/uploads/2022/01/Branford-SHORT-VIDEO1.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
+        <p>Please accept our appreciation and sincere thanks for letting us serve you. Sometimes in the rush of business life, we fail to say THANKS loud enough. But you can be sure your patronage is never taken for granted. Our aim is to please and satisfy. To serve you is a real privilege and pleasure.</p>
+        <p>Quality and consistency, great prices, and friendly service is what makes the award winning, family owned and operated Diner Hospitality Group so special.</p>
+        <p>Thanks for stopping by to see our website. Take a look around. Check out our <a href="/menu" style="color: var(--color-primary); font-weight: 600;">menu page</a> to see an up to date list of what we're offering. If you think that you will have trouble finding us, check out our <a href="/#locations" style="color: var(--color-primary); font-weight: 600;">Locations</a> for a map and directions on how to find us. Come see what we're all about!</p>
+        <p class="signature">— The Parthenon Family</p>
       </div>
     </div>
   </section>
