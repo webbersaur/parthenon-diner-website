@@ -71,10 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ============================================
-  // Header Scroll Effect
+  // Header Scroll Effect (throttled with rAF)
   // ============================================
-  let lastScroll = 0;
   const scrollThreshold = 50;
+  let headerTicking = false;
 
   function handleHeaderScroll() {
     const currentScroll = window.pageYOffset;
@@ -85,35 +85,18 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       header.classList.remove('scrolled');
     }
-
-    lastScroll = currentScroll;
+    headerTicking = false;
   }
 
-  window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+  window.addEventListener('scroll', () => {
+    if (!headerTicking) {
+      requestAnimationFrame(handleHeaderScroll);
+      headerTicking = true;
+    }
+  }, { passive: true });
 
   // ============================================
-  // Scroll-triggered Animations
-  // ============================================
-  function handleScrollAnimations() {
-    const triggerBottom = window.innerHeight * 0.85;
-
-    animatedElements.forEach(element => {
-      const elementTop = element.getBoundingClientRect().top;
-
-      if (elementTop < triggerBottom) {
-        element.classList.add('visible');
-      }
-    });
-  }
-
-  // Initial check for elements in view
-  handleScrollAnimations();
-
-  // Listen for scroll
-  window.addEventListener('scroll', handleScrollAnimations, { passive: true });
-
-  // ============================================
-  // Intersection Observer for Animations (Alternative)
+  // Scroll-triggered Animations (using IntersectionObserver only)
   // ============================================
   if ('IntersectionObserver' in window) {
     const observerOptions = {
@@ -137,8 +120,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ============================================
-  // Active Navigation Highlighting
+  // Active Navigation Highlighting (throttled to reduce reflows)
   // ============================================
+  let navHighlightTicking = false;
+
   function highlightActiveNav() {
     const sections = document.querySelectorAll('section[id]');
     const scrollPosition = window.scrollY + 100;
@@ -157,9 +142,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
     });
+    navHighlightTicking = false;
   }
 
-  window.addEventListener('scroll', highlightActiveNav, { passive: true });
+  window.addEventListener('scroll', () => {
+    if (!navHighlightTicking) {
+      requestAnimationFrame(highlightActiveNav);
+      navHighlightTicking = true;
+    }
+  }, { passive: true });
 
   // ============================================
   // Order Dropdown Click-to-Toggle
@@ -218,52 +209,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ============================================
-  // Button Ripple Effect (Optional Enhancement)
-  // ============================================
-  const buttons = document.querySelectorAll('.btn');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', function(e) {
-      const rect = this.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-
-      const ripple = document.createElement('span');
-      ripple.style.cssText = `
-        position: absolute;
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-        transform: scale(0);
-        animation: ripple 0.6s linear;
-        left: ${x}px;
-        top: ${y}px;
-        width: 100px;
-        height: 100px;
-        margin-left: -50px;
-        margin-top: -50px;
-        pointer-events: none;
-      `;
-
-      this.style.position = 'relative';
-      this.style.overflow = 'hidden';
-      this.appendChild(ripple);
-
-      setTimeout(() => ripple.remove(), 600);
-    });
-  });
-
-  // Add ripple animation styles
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes ripple {
-      to {
-        transform: scale(4);
-        opacity: 0;
-      }
-    }
-  `;
-  document.head.appendChild(style);
 
   // ============================================
   // Lazy Load Images (Performance Enhancement)
