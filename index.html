@@ -171,7 +171,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Preload hero image (LCP element) -->
+  <!-- Preload hero image (LCP element) - WebP with JPEG fallback -->
+  <link rel="preload" as="image" href="parthenon-hero-small.webp" type="image/webp" fetchpriority="high">
   <link rel="preload" as="image" href="parthenon-hero-small.jpeg" fetchpriority="high">
 
   <!-- Fonts - loaded asynchronously to avoid render blocking -->
@@ -300,7 +301,10 @@
         </div>
         <div class="hero-image">
           <div class="hero-image-wrapper">
-            <img src="parthenon-hero-small.jpeg" alt="Delicious food at Parthenon Diner" width="400" height="512" fetchpriority="high">
+            <picture>
+              <source srcset="parthenon-hero-small.webp" type="image/webp">
+              <img src="parthenon-hero-small.jpeg" alt="Delicious food at Parthenon Diner" width="400" height="512" fetchpriority="high">
+            </picture>
             <div class="hero-image-badge">
               <span>Serving Since</span>
               <strong>1985</strong>
