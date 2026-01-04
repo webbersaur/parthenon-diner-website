@@ -25,7 +25,7 @@
   <meta name="twitter:description" content="Parthenon Diner - Classic American diner with Greek specialties. Serving Branford and Old Saybrook, CT since 1985. Breakfast served all day.">
   <meta name="twitter:image" content="https://www.parthenondiner.com/parthenon-hero-small.jpeg">
 
-  <!-- Structured Data -->
+  <!-- Structured Data - Restaurant with Speakable -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -69,7 +69,101 @@
     ],
     "menu": "https://www.parthenondiner.com/menu.html",
     "acceptsReservations": "No",
-    "description": "Family-owned diner serving classic American comfort food and authentic Greek specialties since 1985."
+    "description": "Family-owned diner serving classic American comfort food and authentic Greek specialties since 1985.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".hero-title", ".hero-description", ".location-hours-list"]
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Parthenon Diner Menu",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "Breakfast",
+          "description": "Served all day - omelettes, pancakes, eggs benedict, and more"
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Greek Specialties",
+          "description": "Authentic gyros, souvlaki, moussaka, and spanakopita"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema for Voice Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are Parthenon Diner's hours?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Parthenon Diner Branford is open Sunday through Thursday from 7 AM to 10 PM, and Friday and Saturday from 7 AM to 11 PM. The Old Saybrook location is open Monday through Saturday from 7 AM to 9 PM, and Sunday from 7 AM to 8 PM."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is Parthenon Diner located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Parthenon Diner has two locations in Connecticut. The Branford location is at 374 East Main Street, Branford, CT 06405. The Old Saybrook location is at 809 Boston Post Road, Old Saybrook, CT."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of food does Parthenon Diner serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Parthenon Diner serves classic American diner food with Greek specialties. The menu includes breakfast items like omelettes and eggs benedict served all day, as well as burgers, sandwiches, salads, and authentic Greek dishes like gyros, souvlaki, moussaka, and spanakopita."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Parthenon Diner serve breakfast all day?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Parthenon Diner serves breakfast all day at both locations. You can enjoy omelettes, pancakes, waffles, eggs benedict, and other breakfast favorites any time during operating hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Parthenon Diner's phone number?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For the Branford location, call (203) 481-0333. For the Old Saybrook location, call (860) 395-5111."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Parthenon Diner offer online ordering?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Parthenon Diner offers online ordering for pickup. The Branford location uses Toast for online orders, and the Old Saybrook location uses ChowNow."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Parthenon Diner have gift cards?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Parthenon Diner offers gift cards that are available in any amount and valid at both locations. Gift cards never expire and can be purchased online."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Parthenon Diner host private events?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Parthenon Diner has space available for private events, parties, celebrations, and gatherings at both the Branford and Old Saybrook locations."
+        }
+      }
+    ]
   }
   </script>
 
