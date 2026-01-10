@@ -36,11 +36,10 @@ CSS uses custom properties defined in `:root` for colors (`--color-primary: #8B1
 ### Key Patterns
 - Mobile-first responsive design with breakpoints at 640px, 768px, 1024px, 1200px
 - `.animate-on-scroll` class with IntersectionObserver for scroll-triggered animations
-- Order buttons use dropdown menus linking to external ordering systems (Toast, ChowNow)
+- Order buttons use dropdown menus linking to external ordering systems (Toast for both locations)
 - Menu tabs controlled via `data-tab` attributes and URL hash routing
 
 ### External Integrations
 - Google Fonts (Playfair Display, DM Sans)
 - Google Maps embeds for location cards
-- Toast Tab (Branford online ordering)
-- ChowNow (Old Saybrook online ordering)
+- Toast Tab (online ordering for both locations)

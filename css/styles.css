@@ -1548,6 +1548,20 @@ p {
   gap: 0.5rem;
 }
 
+/* Make dropdown open upward in gift cards section */
+.gift-cards-text .order-dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.gift-cards-text .order-dropdown-menu::before {
+  top: auto;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(180deg);
+}
+
 .gift-cards-image {
   display: flex;
   justify-content: center;
