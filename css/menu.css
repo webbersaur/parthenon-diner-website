@@ -224,6 +224,43 @@
   white-space: nowrap;
 }
 
+.menu-item-orderable {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-item-orderable:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  border-color: var(--color-primary);
+}
+
+.menu-item-orderable:hover .menu-item-order {
+  background-color: var(--color-primary-dark);
+  transform: scale(1.1);
+}
+
+.menu-item-order {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  margin-left: auto;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.menu-item-order svg {
+  width: 14px;
+  height: 14px;
+}
+
 .menu-item p {
   font-size: 0.875rem;
   color: var(--color-gray);
