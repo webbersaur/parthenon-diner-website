@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://www.parthenondiner.com/sitemap-index.xml
 Sitemap: https://www.parthenondiner.com/sitemap.xml
+Sitemap: https://www.parthenondiner.com/sitemap-images.xml
