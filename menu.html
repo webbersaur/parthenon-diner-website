@@ -30,36 +30,118 @@
   <meta name="twitter:description" content="Parthenon Diner Menu - Classic American diner fare and Greek specialties. Breakfast served all day. View our full menu.">
   <meta name="twitter:image" content="https://www.parthenondiner.com/images/menu-breakfast.jpg">
 
-  <!-- Structured Data -->
+  <!-- Structured Data - Menu Page -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Menu",
+    "@id": "https://www.parthenondiner.com/menu#menu",
     "name": "Parthenon Diner Menu",
-    "description": "Classic American diner fare and Greek specialties. Breakfast served all day.",
+    "description": "Classic American diner fare and Greek specialties. Breakfast, lunch, and dinner served daily. Breakfast served all day.",
+    "url": "https://www.parthenondiner.com/menu",
     "hasMenuSection": [
       {
         "@type": "MenuSection",
         "name": "Breakfast",
-        "description": "Served all day - omelettes, pancakes, eggs, and more"
+        "description": "Served all day - omelettes, pancakes, waffles, eggs benedict, French toast, and more",
+        "hasMenuItem": [
+          {"@type": "MenuItem", "name": "Hungry Man Breakfast", "description": "Three eggs, bacon, sausage, ham, home fries, toast"},
+          {"@type": "MenuItem", "name": "Belgian Waffle", "description": "Golden Belgian waffle with butter and syrup"},
+          {"@type": "MenuItem", "name": "Classic Eggs Benedict", "description": "Poached eggs, Canadian bacon, hollandaise on English muffin"}
+        ]
       },
       {
         "@type": "MenuSection",
         "name": "Lunch",
-        "description": "Sandwiches, salads, soups, and diner classics"
+        "description": "Sandwiches, burgers, salads, soups, and diner classics",
+        "hasMenuItem": [
+          {"@type": "MenuItem", "name": "Parthenon Burger", "description": "Half-pound burger with lettuce, tomato, onion"},
+          {"@type": "MenuItem", "name": "Deli Reuben", "description": "Corned beef, sauerkraut, Swiss cheese, Russian dressing on rye"},
+          {"@type": "MenuItem", "name": "Greek Salad", "description": "Fresh greens, feta, olives, tomatoes, cucumbers, Greek dressing"}
+        ]
       },
       {
         "@type": "MenuSection",
         "name": "Dinner",
-        "description": "Steaks, seafood, pasta, and house specialties"
+        "description": "Steaks, seafood, pasta, chicken entrees, and house specialties",
+        "hasMenuItem": [
+          {"@type": "MenuItem", "name": "Grilled Flank Steak", "description": "Marinated and grilled to perfection"},
+          {"@type": "MenuItem", "name": "Broiled Salmon", "description": "Fresh Atlantic salmon broiled with lemon butter"},
+          {"@type": "MenuItem", "name": "Chicken Souvlaki Dinner", "description": "Marinated chicken skewers with rice and salad"}
+        ]
       },
       {
         "@type": "MenuSection",
         "name": "Greek Specialties",
-        "description": "Authentic Greek dishes including gyros, souvlaki, and moussaka"
+        "description": "Authentic Greek dishes including gyros, souvlaki, moussaka, and spanakopita",
+        "hasMenuItem": [
+          {"@type": "MenuItem", "name": "Beef & Lamb Gyro", "description": "Sliced gyro meat with tzatziki, tomatoes, onions in pita"},
+          {"@type": "MenuItem", "name": "Spanakopita", "description": "Spinach and feta cheese wrapped in flaky phyllo dough"},
+          {"@type": "MenuItem", "name": "Moussaka", "description": "Layers of eggplant, ground beef, and bechamel sauce"}
+        ]
       }
     ],
     "inLanguage": "en-US"
+  }
+  </script>
+
+  <!-- Structured Data - Branford Restaurant Reference -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "@id": "https://www.parthenondiner.com/#branford",
+    "name": "Parthenon Diner - Branford",
+    "url": "https://www.parthenondiner.com",
+    "telephone": "(203) 481-0333",
+    "servesCuisine": ["American", "Greek", "Mediterranean", "Diner"],
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "374 E Main St",
+      "addressLocality": "Branford",
+      "addressRegion": "CT",
+      "postalCode": "06405",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.2762,
+      "longitude": -72.8153
+    },
+    "menu": {"@id": "https://www.parthenondiner.com/menu#menu"},
+    "description": "Family-owned diner in Branford, CT serving breakfast, lunch, and dinner. Breakfast served all day. Greek specialties available.",
+    "keywords": "breakfast near me Branford, lunch near me Branford, dinner near me Branford, diner Branford CT, Greek restaurant Branford"
+  }
+  </script>
+
+  <!-- Structured Data - Old Saybrook Restaurant Reference -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "@id": "https://www.parthenondiner.com/#old-saybrook",
+    "name": "Parthenon Diner - Old Saybrook",
+    "url": "https://www.parthenondiner.com",
+    "telephone": "(860) 395-5111",
+    "servesCuisine": ["American", "Greek", "Mediterranean", "Diner"],
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "809 Boston Post Rd",
+      "addressLocality": "Old Saybrook",
+      "addressRegion": "CT",
+      "postalCode": "06475",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.2923,
+      "longitude": -72.3764
+    },
+    "menu": {"@id": "https://www.parthenondiner.com/menu#menu"},
+    "description": "Family-owned diner in Old Saybrook, CT serving breakfast, lunch, and dinner. Breakfast served all day. Greek specialties available.",
+    "keywords": "breakfast near me Old Saybrook, lunch near me Old Saybrook, dinner near me Old Saybrook, diner Old Saybrook CT, Greek restaurant Old Saybrook"
   }
   </script>
 

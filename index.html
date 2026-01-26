@@ -31,33 +31,36 @@
   <meta name="twitter:description" content="Parthenon Diner - Classic American diner with Greek specialties. Serving Branford and Old Saybrook, CT since 1985. Breakfast served all day.">
   <meta name="twitter:image" content="https://www.parthenondiner.com/parthenon-hero-small.jpeg">
 
-  <!-- Structured Data - Restaurant with Speakable -->
+  <!-- Structured Data - Branford Location -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "name": "Parthenon Diner",
-    "image": "https://www.parthenondiner.com/parthenon-hero-small.jpeg",
+    "@id": "https://www.parthenondiner.com/#branford",
+    "name": "Parthenon Diner - Branford",
+    "image": "https://www.parthenondiner.com/Parthenon-outside.jpg",
     "url": "https://www.parthenondiner.com",
-    "telephone": ["(203) 481-0333", "(860) 395-5111"],
-    "servesCuisine": ["American", "Greek"],
+    "telephone": "(203) 481-0333",
+    "servesCuisine": ["American", "Greek", "Mediterranean", "Diner"],
     "priceRange": "$$",
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "374 E Main St",
-        "addressLocality": "Branford",
-        "addressRegion": "CT",
-        "postalCode": "06405",
-        "addressCountry": "US"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "809 Boston Post Rd",
-        "addressLocality": "Old Saybrook",
-        "addressRegion": "CT",
-        "addressCountry": "US"
-      }
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "374 E Main St",
+      "addressLocality": "Branford",
+      "addressRegion": "CT",
+      "postalCode": "06405",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.2762,
+      "longitude": -72.8153
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Branford", "containedInPlace": {"@type": "State", "name": "Connecticut"}},
+      {"@type": "City", "name": "East Haven", "containedInPlace": {"@type": "State", "name": "Connecticut"}},
+      {"@type": "City", "name": "Guilford", "containedInPlace": {"@type": "State", "name": "Connecticut"}},
+      {"@type": "City", "name": "North Branford", "containedInPlace": {"@type": "State", "name": "Connecticut"}}
     ],
     "openingHoursSpecification": [
       {
@@ -73,28 +76,121 @@
         "closes": "23:00"
       }
     ],
-    "menu": "https://www.parthenondiner.com/menu.html",
-    "acceptsReservations": "No",
-    "description": "Family-owned diner serving classic American comfort food and authentic Greek specialties since 1985.",
-    "speakable": {
-      "@type": "SpeakableSpecification",
-      "cssSelector": [".hero-title", ".hero-description", ".location-hours-list"]
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
+    "menu": "https://www.parthenondiner.com/menu",
+    "hasMenu": {
+      "@type": "Menu",
       "name": "Parthenon Diner Menu",
-      "itemListElement": [
-        {
-          "@type": "OfferCatalog",
-          "name": "Breakfast",
-          "description": "Served all day - omelettes, pancakes, eggs benedict, and more"
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "Greek Specialties",
-          "description": "Authentic gyros, souvlaki, moussaka, and spanakopita"
-        }
+      "hasMenuSection": [
+        {"@type": "MenuSection", "name": "Breakfast", "description": "Omelettes, pancakes, waffles, eggs benedict - served all day"},
+        {"@type": "MenuSection", "name": "Lunch", "description": "Sandwiches, burgers, salads, soups"},
+        {"@type": "MenuSection", "name": "Dinner", "description": "Steaks, seafood, pasta, chicken entrees"},
+        {"@type": "MenuSection", "name": "Greek Specialties", "description": "Gyros, souvlaki, moussaka, spanakopita"}
       ]
+    },
+    "acceptsReservations": "No",
+    "paymentAccepted": "Cash, Credit Card",
+    "currenciesAccepted": "USD",
+    "description": "Family-owned diner in Branford, CT serving classic American breakfast, lunch, and dinner with authentic Greek specialties since 1985. Breakfast served all day.",
+    "keywords": "breakfast near me, lunch near me, dinner near me, diner near me, Greek food near me, Branford restaurant, breakfast all day, eggs benedict, gyros, pancakes",
+    "sameAs": [
+      "https://www.facebook.com/parthenon.diner/",
+      "https://www.instagram.com/parthenonbranford/"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "500"
+    },
+    "potentialAction": {
+      "@type": "OrderAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/v3",
+        "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+      },
+      "deliveryMethod": ["http://purl.org/goodrelations/v1#DeliveryModePickUp"]
+    }
+  }
+  </script>
+
+  <!-- Structured Data - Old Saybrook Location -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "@id": "https://www.parthenondiner.com/#old-saybrook",
+    "name": "Parthenon Diner - Old Saybrook",
+    "image": "https://www.parthenondiner.com/old-saybrook.jpg",
+    "url": "https://www.parthenondiner.com",
+    "telephone": "(860) 395-5111",
+    "servesCuisine": ["American", "Greek", "Mediterranean", "Diner"],
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "809 Boston Post Rd",
+      "addressLocality": "Old Saybrook",
+      "addressRegion": "CT",
+      "postalCode": "06475",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.2923,
+      "longitude": -72.3764
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Old Saybrook", "containedInPlace": {"@type": "State", "name": "Connecticut"}},
+      {"@type": "City", "name": "Westbrook", "containedInPlace": {"@type": "State", "name": "Connecticut"}},
+      {"@type": "City", "name": "Essex", "containedInPlace": {"@type": "State", "name": "Connecticut"}},
+      {"@type": "City", "name": "Old Lyme", "containedInPlace": {"@type": "State", "name": "Connecticut"}}
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "07:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "07:00",
+        "closes": "20:00"
+      }
+    ],
+    "menu": "https://www.parthenondiner.com/menu",
+    "hasMenu": {
+      "@type": "Menu",
+      "name": "Parthenon Diner Menu",
+      "hasMenuSection": [
+        {"@type": "MenuSection", "name": "Breakfast", "description": "Omelettes, pancakes, waffles, eggs benedict - served all day"},
+        {"@type": "MenuSection", "name": "Lunch", "description": "Sandwiches, burgers, salads, soups"},
+        {"@type": "MenuSection", "name": "Dinner", "description": "Steaks, seafood, pasta, chicken entrees"},
+        {"@type": "MenuSection", "name": "Greek Specialties", "description": "Gyros, souvlaki, moussaka, spanakopita"}
+      ]
+    },
+    "acceptsReservations": "No",
+    "paymentAccepted": "Cash, Credit Card",
+    "currenciesAccepted": "USD",
+    "description": "Family-owned diner in Old Saybrook, CT serving classic American breakfast, lunch, and dinner with authentic Greek specialties. Breakfast served all day.",
+    "keywords": "breakfast near me, lunch near me, dinner near me, diner near me, Greek food near me, Old Saybrook restaurant, breakfast all day, eggs benedict, gyros, pancakes",
+    "sameAs": [
+      "https://www.facebook.com/parthenon.diner/",
+      "https://www.instagram.com/parthenonbranford/"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "300"
+    },
+    "potentialAction": {
+      "@type": "OrderAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://order.toasttab.com/online/parthenon-diner-of-old-saybrook-809-boston-post-rd",
+        "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+      },
+      "deliveryMethod": ["http://purl.org/goodrelations/v1#DeliveryModePickUp"]
     }
   }
   </script>
