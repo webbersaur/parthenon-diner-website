@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Parthenon Diner</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #8B1538;
+      --color-dark: #1a1a2e;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #faf9f6;
+      color: var(--color-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container { max-width: 500px; }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+    .links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .links a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+    }
+    .links a.primary {
+      background: var(--color-primary);
+      color: #fff;
+    }
+    .links a.primary:hover { background: #a61d47; }
+    .links a.secondary {
+      border: 2px solid var(--color-primary);
+      color: var(--color-primary);
+    }
+    .links a.secondary:hover {
+      background: var(--color-primary);
+      color: #fff;
+    }
+  </style>
+  <script>
+    (function() {
+      var path = window.location.pathname.toLowerCase();
+
+      var redirects = {
+        '/page/26782-menu': '/menu',
+        '/page/26930-breakfast': '/menu#breakfast',
+        '/page/1236-photos-of-greece': '/menu',
+        '/page/30357-branford-home': '/',
+        '/html/lunch___dinner.html': '/menu#lunch',
+        '/feed': '/',
+        '/feed/': '/',
+        '/embed': '/',
+        '/embed/': '/',
+        '/social': '/',
+        '/social/': '/',
+      };
+
+      // Check exact match first
+      var dest = redirects[path] || redirects[path.replace(/\/$/, '')];
+      if (dest) {
+        window.location.replace(dest);
+        return;
+      }
+
+      // Pattern-based redirects
+      if (/^\/wp-content\/uploads\/.*\.(pdf|PDF)/.test(path)) {
+        window.location.replace('/menu');
+        return;
+      }
+      if (/^\/wp-/.test(path)) {
+        window.location.replace('/');
+        return;
+      }
+      if (/^\/menu\//.test(path)) {
+        window.location.replace('/menu');
+        return;
+      }
+      if (/^\/page\//.test(path)) {
+        window.location.replace('/');
+        return;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Page Not Found</h1>
+    <p>Sorry, the page you're looking for doesn't exist. It may have been moved or removed. Let's get you back on track.</p>
+    <div class="links">
+      <a href="/" class="primary">Go Home</a>
+      <a href="/menu" class="secondary">View Menu</a>
+    </div>
+  </div>
+</body>
+</html>
