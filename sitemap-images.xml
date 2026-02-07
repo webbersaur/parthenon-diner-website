@@ -54,6 +54,40 @@
     </image:image>
   </url>
 
+  <!-- Branford location page images -->
+  <url>
+    <loc>https://www.parthenondiner.com/branford</loc>
+    <image:image>
+      <image:loc>https://www.parthenondiner.com/Parthenon-outside.jpg</image:loc>
+      <image:title>Parthenon Diner Branford Location</image:title>
+      <image:caption>Parthenon Diner exterior at 374 E Main St near Branford Green, CT</image:caption>
+      <image:geo_location>Branford, Connecticut</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.parthenondiner.com/images/menu-breakfast.jpg</image:loc>
+      <image:title>Breakfast at Parthenon Diner Branford</image:title>
+      <image:caption>Breakfast served all day at Parthenon Diner Branford location</image:caption>
+      <image:geo_location>Branford, Connecticut</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- Old Saybrook location page images -->
+  <url>
+    <loc>https://www.parthenondiner.com/old-saybrook</loc>
+    <image:image>
+      <image:loc>https://www.parthenondiner.com/old-saybrook.jpg</image:loc>
+      <image:title>Parthenon Diner Old Saybrook Location</image:title>
+      <image:caption>Parthenon Diner exterior at 809 Boston Post Rd, Old Saybrook, CT</image:caption>
+      <image:geo_location>Old Saybrook, Connecticut</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.parthenondiner.com/images/menu-breakfast.jpg</image:loc>
+      <image:title>Breakfast at Parthenon Diner Old Saybrook</image:title>
+      <image:caption>Breakfast served all day at Parthenon Diner Old Saybrook location</image:caption>
+      <image:geo_location>Old Saybrook, Connecticut</image:geo_location>
+    </image:image>
+  </url>
+
   <!-- Menu page images -->
   <url>
     <loc>https://www.parthenondiner.com/menu</loc>

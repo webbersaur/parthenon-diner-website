@@ -146,6 +146,28 @@
   }
   </script>
 
+  <!-- Structured Data - BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.parthenondiner.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Menu",
+        "item": "https://www.parthenondiner.com/menu"
+      }
+    ]
+  }
+  </script>
+
   <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1677,6 +1699,8 @@
             <a href="/menu" class="footer-link">Menu</a>
             <a href="/about" class="footer-link">About Us</a>
             <a href="/#locations" class="footer-link">Locations</a>
+            <a href="/branford" class="footer-link">Branford Location</a>
+            <a href="/old-saybrook" class="footer-link">Old Saybrook Location</a>
             <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/giftcards" class="footer-link" target="_blank">Gift Cards</a>
             <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/rewardsSignup" class="footer-link" target="_blank">Rewards</a>
             <button type="button" class="footer-link footer-rate-us-btn" id="footerRateUsBtn">Rate Us</button>
