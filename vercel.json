@@ -22,6 +22,10 @@
     { "source": "/index.php", "destination": "/", "permanent": true },
     { "source": "/page/:path*", "destination": "/", "permanent": true },
     { "source": "/html/:path*", "destination": "/", "permanent": true },
-    { "source": "/comments/:path*", "destination": "/", "statusCode": 410 }
+    { "source": "/comments/:path*", "destination": "/", "statusCode": 410 },
+    { "source": "/author/:path*", "destination": "/", "statusCode": 410 },
+    { "source": "/category/:path*", "destination": "/", "statusCode": 410 },
+    { "source": "/tag/:path*", "destination": "/", "statusCode": 410 },
+    { "source": "/xmlrpc.php", "destination": "/", "statusCode": 410 }
   ]
 }
