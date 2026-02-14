@@ -62,3 +62,18 @@ Rankings captured via web search API. Does not reflect Google Maps/Local Pack re
 - Google Maps/Local Pack rankings not captured — requires tools like BrightLocal or Local Falcon for grid-based tracking.
 - Parthenon dominates "Greek food" with 4 listings in the top 10 (site, CTvisit, Chamber, About page).
 - "Breakfast" and "restaurants" are high-competition generic terms dominated by aggregators and newer competitors.
+
+## Changes Made — February 14, 2026
+
+To target "breakfast Branford CT" (currently not in top 10), created two dedicated breakfast landing pages:
+
+- **`/breakfast-branford`** — Branford-specific all-day breakfast page targeting "breakfast Branford CT", "breakfast near me Branford", "brunch Branford CT". Includes all 55 breakfast menu items with prices, Branford Restaurant structured data (JSON-LD), location-specific intro copy (Route 1, Branford Green, East Main Street), and Branford order/hours CTA.
+- **`/breakfast-old-saybrook`** — Old Saybrook-specific all-day breakfast page targeting "breakfast Old Saybrook CT". Same 55 items, Old Saybrook Restaurant structured data, location-specific copy (Boston Post Road, Westbrook, Essex, Old Lyme), and Old Saybrook order/hours CTA.
+
+Previously, all breakfast content lived behind `/menu#breakfast` — a hash fragment Google treats as the same URL as `/menu`, giving breakfast no dedicated indexable page. Each new page has:
+
+- Full menu with prices in JSON-LD `MenuSection`/`MenuItem` schema (6 sections, 55 items)
+- `Restaurant` structured data for the specific location
+- `BreadcrumbList` schema (Home > Location > Breakfast)
+- Cross-link to the other location's breakfast page
+- Internal links updated across all 10 existing site pages (footers, menu cards, redirects)
