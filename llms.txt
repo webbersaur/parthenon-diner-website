@@ -34,6 +34,8 @@ Our menu features breakfast (omelettes, pancakes, waffles, eggs benedict), lunch
 
 - [Home](https://www.parthenondiner.com/)
 - [Menu](https://www.parthenondiner.com/menu)
+- [Breakfast Menu — Branford](https://www.parthenondiner.com/breakfast-branford)
+- [Breakfast Menu — Old Saybrook](https://www.parthenondiner.com/breakfast-old-saybrook)
 - [About Us](https://www.parthenondiner.com/about)
 - [Branford Location](https://www.parthenondiner.com/branford)
 - [Old Saybrook Location](https://www.parthenondiner.com/old-saybrook)
