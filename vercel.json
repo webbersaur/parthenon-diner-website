@@ -29,5 +29,16 @@
     { "source": "/category/:path*", "destination": "/", "statusCode": 410 },
     { "source": "/tag/:path*", "destination": "/", "statusCode": 410 },
     { "source": "/xmlrpc.php", "destination": "/", "statusCode": 410 }
+  ],
+  "rewrites": [
+    { "source": "/llms", "destination": "/llms.txt" }
+  ],
+  "headers": [
+    {
+      "source": "/llms.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+      ]
+    }
   ]
 }
