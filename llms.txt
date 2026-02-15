@@ -41,6 +41,14 @@ Our menu features breakfast (omelettes, pancakes, waffles, eggs benedict), lunch
 - [Old Saybrook Location](https://www.parthenondiner.com/old-saybrook)
 - [Leave Feedback](https://www.parthenondiner.com/feedback)
 
+## Blog
+
+- [Blog](https://www.parthenondiner.com/blog/)
+- [Best Restaurants in Branford, CT](https://www.parthenondiner.com/blog/best-restaurants-branford-ct)
+- [Best Restaurants in Old Saybrook, CT](https://www.parthenondiner.com/blog/best-restaurants-old-saybrook-ct)
+- [Best Breakfast in Branford, CT](https://www.parthenondiner.com/blog/best-breakfast-branford-ct)
+- [Best Breakfast in Old Saybrook, CT](https://www.parthenondiner.com/blog/best-breakfast-old-saybrook-ct)
+
 ## Frequently Asked Questions
 
 **What are Parthenon Diner's hours?**

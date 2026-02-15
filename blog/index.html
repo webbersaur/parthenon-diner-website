@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="msvalidate.01" content="564C441015D4607807CA90C4275EF907">
-  <meta name="description" content="We're sorry to hear about your experience at Parthenon Diner. Please let us know what happened so we can make it right.">
-  <title>We Want to Hear From You | Parthenon Diner</title>
+  <meta name="description" content="Local dining guides for Connecticut's shoreline — discover the best restaurants and breakfast spots in Branford and Old Saybrook, CT.">
+  <title>Blog | Parthenon Diner — Local Dining Guides for CT's Shoreline</title>
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://www.parthenondiner.com/not-happy">
+  <link rel="canonical" href="https://www.parthenondiner.com/blog/">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -18,30 +18,52 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="We Want to Hear From You | Parthenon Diner">
-  <meta property="og:description" content="We're sorry to hear about your experience at Parthenon Diner. Please let us know what happened so we can make it right.">
-  <meta property="og:url" content="https://www.parthenondiner.com/not-happy">
-  <meta property="og:image" content="https://www.parthenondiner.com/parthenon-hero-small.jpeg">
+  <meta property="og:title" content="Blog | Parthenon Diner — Local Dining Guides for CT's Shoreline">
+  <meta property="og:description" content="Local dining guides for Connecticut's shoreline — discover the best restaurants and breakfast spots in Branford and Old Saybrook, CT.">
+  <meta property="og:url" content="https://www.parthenondiner.com/blog/">
+  <meta property="og:image" content="https://www.parthenondiner.com/Parthenon-outside.jpg">
   <meta property="og:site_name" content="Parthenon Diner">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="We Want to Hear From You | Parthenon Diner">
-  <meta name="twitter:description" content="We're sorry to hear about your experience at Parthenon Diner. Please let us know what happened so we can make it right.">
-  <meta name="twitter:image" content="https://www.parthenondiner.com/parthenon-hero-small.jpeg">
+  <meta name="twitter:title" content="Blog | Parthenon Diner — Local Dining Guides for CT's Shoreline">
+  <meta name="twitter:description" content="Local dining guides for Connecticut's shoreline — discover the best restaurants and breakfast spots in Branford and Old Saybrook, CT.">
+  <meta name="twitter:image" content="https://www.parthenondiner.com/Parthenon-outside.jpg">
+
+  <!-- Structured Data - BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.parthenondiner.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://www.parthenondiner.com/blog/"
+      }
+    ]
+  }
+  </script>
 
   <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Fonts - loaded asynchronously to avoid render blocking -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"></noscript>
+  <!-- Fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/feedback.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/blog.css">
 </head>
 <body>
   <!-- Header -->
@@ -57,7 +79,7 @@
           <li><a href="/menu" class="nav-link">Menu</a></li>
           <li><a href="/about" class="nav-link">About</a></li>
           <li><a href="/#locations" class="nav-link">Locations</a></li>
-          <li><a href="catering-events/" class="nav-link">Events</a></li>
+          <li><a href="/catering-events/" class="nav-link">Events</a></li>
           <li><a href="/blog/" class="nav-link">Blog</a></li>
           <li class="nav-cta">
             <div class="order-dropdown">
@@ -115,7 +137,7 @@
       <li><a href="/menu" class="mobile-nav-link">Menu</a></li>
       <li><a href="/about" class="mobile-nav-link">About</a></li>
       <li><a href="/#locations" class="mobile-nav-link">Locations</a></li>
-      <li><a href="catering-events/" class="mobile-nav-link">Events</a></li>
+      <li><a href="/catering-events/" class="mobile-nav-link">Events</a></li>
       <li><a href="/blog/" class="mobile-nav-link">Blog</a></li>
     </ul>
     <div class="mobile-nav-cta">
@@ -126,32 +148,128 @@
   </nav>
   <div class="overlay" id="overlay"></div>
 
-  <!-- Not Happy Section -->
-  <main class="feedback-page not-happy-page">
-    <div class="feedback-background"></div>
-
-    <div class="not-happy-content">
-      <!-- Apologetic Message -->
-      <div class="not-happy-message animate-on-scroll">
-        <p class="apology-text">
-          If you have reached this page, we apologize. It upsets us very much to see anyone leave less than thrilled. Please take a moment to let us know what happened.
-        </p>
-      </div>
-
-      <!-- Embedded Contact Form -->
-      <div class="contact-form-container animate-on-scroll">
-        <iframe
-          src="https://www.emailmeform.com/builder/embed/iBl0dZ2e9Q4Jbw18pD1"
-          width="100%"
-          height="700"
-          frameborder="0"
-          scrolling="auto"
-          title="Parthenon Review Form"
-          style="background: white; border-radius: 8px; min-height: 650px;">
-        </iframe>
+  <!-- Blog Hero -->
+  <section class="blog-hero">
+    <div class="container">
+      <div class="blog-hero-content">
+        <span class="section-label">From the Parthenon</span>
+        <h1>Local Dining <span class="text-primary">Guides</span></h1>
+        <p>Insider tips on the best restaurants and breakfast spots along Connecticut's shoreline, from Branford to Old Saybrook.</p>
       </div>
     </div>
-  </main>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="blog-grid container">
+    <a href="/blog/best-restaurants-branford-ct" class="blog-card animate-on-scroll">
+      <div class="blog-card-image">
+        <svg class="blog-card-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+          <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+          <line x1="6" y1="1" x2="6" y2="4"/>
+          <line x1="10" y1="1" x2="10" y2="4"/>
+          <line x1="14" y1="1" x2="14" y2="4"/>
+        </svg>
+      </div>
+      <div class="blog-card-content">
+        <p class="blog-card-meta">Branford, CT</p>
+        <h2>Best Restaurants in Branford, CT: A Local's Guide to Shoreline Dining</h2>
+        <p>From classic diners to upscale seafood, explore the restaurants that make Branford one of Connecticut's best dining destinations.</p>
+        <span class="blog-card-link">
+          Read More
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </span>
+      </div>
+    </a>
+
+    <a href="/blog/best-restaurants-old-saybrook-ct" class="blog-card animate-on-scroll">
+      <div class="blog-card-image">
+        <svg class="blog-card-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+          <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+          <line x1="6" y1="1" x2="6" y2="4"/>
+          <line x1="10" y1="1" x2="10" y2="4"/>
+          <line x1="14" y1="1" x2="14" y2="4"/>
+        </svg>
+      </div>
+      <div class="blog-card-content">
+        <p class="blog-card-meta">Old Saybrook, CT</p>
+        <h2>Best Restaurants in Old Saybrook, CT: Where to Eat on the Lower Shoreline</h2>
+        <p>Discover the diverse dining scene in Old Saybrook, from waterfront seafood to family-friendly favorites on Boston Post Road.</p>
+        <span class="blog-card-link">
+          Read More
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </span>
+      </div>
+    </a>
+
+    <a href="/blog/best-breakfast-branford-ct" class="blog-card animate-on-scroll">
+      <div class="blog-card-image">
+        <svg class="blog-card-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+      </div>
+      <div class="blog-card-content">
+        <p class="blog-card-meta">Branford, CT</p>
+        <h2>Best Breakfast in Branford, CT: Where Locals Go for Morning Favorites</h2>
+        <p>Whether you want pancakes, eggs benedict, or a quick breakfast sandwich, here are the top breakfast spots in Branford.</p>
+        <span class="blog-card-link">
+          Read More
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </span>
+      </div>
+    </a>
+
+    <a href="/blog/best-breakfast-old-saybrook-ct" class="blog-card animate-on-scroll">
+      <div class="blog-card-image">
+        <svg class="blog-card-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+      </div>
+      <div class="blog-card-content">
+        <p class="blog-card-meta">Old Saybrook, CT</p>
+        <h2>Best Breakfast in Old Saybrook, CT: Morning Spots Worth Waking Up For</h2>
+        <p>From all-day breakfast diners to charming cafes, find the best places to start your morning in Old Saybrook.</p>
+        <span class="blog-card-link">
+          Read More
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </span>
+      </div>
+    </a>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner-content">
+        <h2>Hungry? Order Online Now</h2>
+        <p>Skip the wait — place your order for pickup from either Parthenon Diner location.</p>
+        <div class="order-dropdown">
+          <button class="btn btn-secondary">Order Now</button>
+          <div class="order-dropdown-menu">
+            <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/v3" target="_blank">
+              <span class="location-name">Branford</span>
+              <span class="location-address">374 E Main St</span>
+            </a>
+            <a href="https://order.toasttab.com/online/parthenon-diner-of-old-saybrook-809-boston-post-rd" target="_blank">
+              <span class="location-name">Old Saybrook</span>
+              <span class="location-address">809 Boston Post Rd</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
@@ -193,16 +311,7 @@
             <a href="/branford" class="footer-link">Branford Location</a>
             <a href="/old-saybrook" class="footer-link">Old Saybrook Location</a>
             <a href="/blog/" class="footer-link">Blog</a>
-            <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/giftcards" class="footer-link footer-link-highlight" target="_blank">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="8" width="18" height="13" rx="2"/>
-                <path d="M12 8V21"/>
-                <path d="M3 12h18"/>
-                <path d="M12 8c-2-2-4-2.5-4-4a2 2 0 0 1 4 0"/>
-                <path d="M12 8c2-2 4-2.5 4-4a2 2 0 0 0-4 0"/>
-              </svg>
-              Gift Cards
-            </a>
+            <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/giftcards" class="footer-link" target="_blank">Gift Cards</a>
             <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/rewardsSignup" class="footer-link" target="_blank">Rewards</a>
             <button type="button" class="footer-link footer-rate-us-btn" id="footerRateUsBtn">Rate Us</button>
           </div>
@@ -243,7 +352,6 @@
     </div>
   </footer>
 
-  <!-- JavaScript -->
   <!-- Rate Us Modal -->
   <div class="rate-modal-overlay" id="rateUsModal">
     <div class="rate-modal">
@@ -256,11 +364,11 @@
       <h2 class="rate-modal-title">How Was Your Experience?</h2>
       <p class="rate-modal-subtitle">We value your feedback!</p>
       <div class="rate-modal-buttons">
-        <a href="feedback.html" class="rate-modal-btn rate-modal-btn-happy">
+        <a href="/feedback" class="rate-modal-btn rate-modal-btn-happy">
           <span class="rate-modal-btn-icon">😊</span>
           <span class="rate-modal-btn-text">Happy</span>
         </a>
-        <a href="not-happy.html" class="rate-modal-btn rate-modal-btn-sad">
+        <a href="/not-happy" class="rate-modal-btn rate-modal-btn-sad">
           <span class="rate-modal-btn-icon">😔</span>
           <span class="rate-modal-btn-text">Not Happy</span>
         </a>
@@ -268,6 +376,6 @@
     </div>
   </div>
 
-  <script src="js/main.js" defer></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>

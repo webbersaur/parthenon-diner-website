@@ -77,3 +77,34 @@ Previously, all breakfast content lived behind `/menu#breakfast` — a hash frag
 - `BreadcrumbList` schema (Home > Location > Breakfast)
 - Cross-link to the other location's breakfast page
 - Internal links updated across all 10 existing site pages (footers, menu cards, redirects)
+
+## Changes Made — February 15, 2026
+
+To target "restaurants in Branford CT", "restaurants in Old Saybrook CT", "breakfast Branford CT", and "breakfast Old Saybrook CT" (all currently not in top 10), created a blog section with 4 local SEO guide posts:
+
+### New Pages
+
+- **`/blog/`** — Blog listing page linking to all 4 posts
+- **`/blog/best-restaurants-branford-ct`** — "Best Restaurants in Branford, CT: A Local's Guide to Shoreline Dining" — features 7 restaurants (Parthenon Diner, Rossitto's Ristorante, Saltbrick Prime, Dockside Seafood, The Tasty Yolk, Crostini, Sky Diner)
+- **`/blog/best-restaurants-old-saybrook-ct`** — "Best Restaurants in Old Saybrook, CT: Where to Eat on the Lower Shoreline" — features 8 restaurants (Parthenon Diner, Fresh Salt, Liv's Oyster Bar, Alforno Trattoria, Penny Lane Pub, Himalaya Cafe, Little Pub, Sip Wine Bar)
+- **`/blog/best-breakfast-branford-ct`** — "Best Breakfast in Branford, CT: Where Locals Go for Morning Favorites" — features 5 spots (Parthenon Diner, The Tasty Yolk, Crostini, Sky Diner, Perkatory Coffee Roasters)
+- **`/blog/best-breakfast-old-saybrook-ct`** — "Best Breakfast in Old Saybrook, CT: Morning Spots Worth Waking Up For" — features 6 spots (Parthenon Diner, Tea Kettle, Mirsina's, Fresh Salt, Paperback Cafe, Ashlawn Farm Coffee)
+
+### Strategy
+
+Each post is a genuine ~1,500–2,000 word "local's guide" featuring real, currently operating restaurants. Parthenon Diner is listed first and most prominently in each post with 3+ paragraphs and internal links to location pages (`/branford`, `/old-saybrook`), menu (`/menu`), and breakfast pages (`/breakfast-branford`, `/breakfast-old-saybrook`). Other restaurants get 1–2 paragraphs each. Every restaurant entry includes "What to Order" recommendations and a details block with address, phone, and hours.
+
+### SEO Elements Per Post
+
+- `BlogPosting` JSON-LD schema (headline, description, datePublished, author, publisher)
+- `BreadcrumbList` JSON-LD schema (Home > Blog > Post Title)
+- Full meta tags: title, description, canonical URL, Open Graph (type: article), Twitter Card
+- Keyword-rich H1 with location name, H2 for each restaurant, H3 for "What to Order" and "Details"
+- Internal links to Parthenon Diner location and menu pages
+- CTA sections linking to Toast online ordering
+
+### Site-Wide Updates
+
+- Blog link added to desktop nav, mobile nav, and footer on all 10 existing HTML pages
+- 5 new URLs added to sitemap.xml (blog index + 4 posts)
+- Blog section with 5 links added to llms.txt
