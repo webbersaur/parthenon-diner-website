@@ -11,7 +11,7 @@
       <image:geo_location>Branford, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/egss%20benedict.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/eggs-benedict.jpg</image:loc>
       <image:title>Eggs Benedict at Parthenon Diner</image:title>
       <image:caption>Classic Eggs Benedict breakfast served all day at Parthenon Diner</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
@@ -121,7 +121,7 @@
   <url>
     <loc>https://www.parthenondiner.com/about</loc>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/egss%20benedict.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/eggs-benedict.jpg</image:loc>
       <image:title>Eggs Benedict at Parthenon Diner</image:title>
       <image:caption>Family-owned diner serving breakfast, lunch, and dinner since 1985</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
