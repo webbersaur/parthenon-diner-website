@@ -28,7 +28,8 @@
     { "source": "/author/:path*", "destination": "/", "statusCode": 410 },
     { "source": "/category/:path*", "destination": "/", "statusCode": 410 },
     { "source": "/tag/:path*", "destination": "/", "statusCode": 410 },
-    { "source": "/xmlrpc.php", "destination": "/", "statusCode": 410 }
+    { "source": "/xmlrpc.php", "destination": "/", "statusCode": 410 },
+    { "source": "/egss%20benedict.jpg", "destination": "/eggs-benedict.jpg", "permanent": true }
   ],
   "rewrites": [
     { "source": "/llms", "destination": "/llms.txt" }
