@@ -5,3 +5,7 @@
 .DS_Store
 Thumbs.db
 .vercel
+
+# Environment variables
+.env
+.env.*
