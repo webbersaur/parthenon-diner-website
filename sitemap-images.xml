@@ -5,49 +5,49 @@
   <url>
     <loc>https://www.parthenondiner.com/</loc>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/parthenon-hero-small.jpeg</image:loc>
+      <image:loc>https://www.parthenondiner.com/parthenon-hero-small.webp</image:loc>
       <image:title>Parthenon Diner - Classic American Diner with Greek Specialties</image:title>
       <image:caption>Delicious food at Parthenon Diner in Branford and Old Saybrook, Connecticut</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/eggs-benedict.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/eggs-benedict.webp</image:loc>
       <image:title>Eggs Benedict at Parthenon Diner</image:title>
       <image:caption>Classic Eggs Benedict breakfast served all day at Parthenon Diner</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/Parthenon-outside.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/parthenon-outside.webp</image:loc>
       <image:title>Parthenon Diner Branford Location</image:title>
       <image:caption>Parthenon Diner exterior at 374 E Main St, Branford, CT</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/old-saybrook.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/old-saybrook.webp</image:loc>
       <image:title>Parthenon Diner Old Saybrook Location</image:title>
       <image:caption>Parthenon Diner exterior at 809 Boston Post Rd, Old Saybrook, CT</image:caption>
       <image:geo_location>Old Saybrook, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/images/menu-breakfast.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/images/menu-breakfast.webp</image:loc>
       <image:title>Breakfast at Parthenon Diner</image:title>
       <image:caption>Eggs and bacon breakfast served all day at Parthenon Diner</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/images/menu-burger.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/images/menu-burger.webp</image:loc>
       <image:title>Parthenon Burger</image:title>
       <image:caption>Gourmet burger lunch at Parthenon Diner</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/images/menu-steak.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/images/menu-steak.webp</image:loc>
       <image:title>Grilled Steak Dinner at Parthenon Diner</image:title>
       <image:caption>Grilled flank steak dinner at Parthenon Diner</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/images/menu-gyro.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/images/menu-gyro.webp</image:loc>
       <image:title>Greek Gyro Platter at Parthenon Diner</image:title>
       <image:caption>Authentic beef and lamb gyro with Greek specialties</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
@@ -58,13 +58,13 @@
   <url>
     <loc>https://www.parthenondiner.com/branford</loc>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/Parthenon-outside.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/parthenon-outside.webp</image:loc>
       <image:title>Parthenon Diner Branford Location</image:title>
       <image:caption>Parthenon Diner exterior at 374 E Main St near Branford Green, CT</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/images/menu-breakfast.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/images/menu-breakfast.webp</image:loc>
       <image:title>Breakfast at Parthenon Diner Branford</image:title>
       <image:caption>Breakfast served all day at Parthenon Diner Branford location</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
@@ -75,13 +75,13 @@
   <url>
     <loc>https://www.parthenondiner.com/old-saybrook</loc>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/old-saybrook.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/old-saybrook.webp</image:loc>
       <image:title>Parthenon Diner Old Saybrook Location</image:title>
       <image:caption>Parthenon Diner exterior at 809 Boston Post Rd, Old Saybrook, CT</image:caption>
       <image:geo_location>Old Saybrook, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/images/menu-breakfast.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/images/menu-breakfast.webp</image:loc>
       <image:title>Breakfast at Parthenon Diner Old Saybrook</image:title>
       <image:caption>Breakfast served all day at Parthenon Diner Old Saybrook location</image:caption>
       <image:geo_location>Old Saybrook, Connecticut</image:geo_location>
@@ -92,25 +92,25 @@
   <url>
     <loc>https://www.parthenondiner.com/menu</loc>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/images/menu-breakfast.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/images/menu-breakfast.webp</image:loc>
       <image:title>Parthenon Diner Breakfast Menu</image:title>
       <image:caption>Breakfast served all day - eggs, pancakes, waffles, eggs benedict</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/images/menu-burger.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/images/menu-burger.webp</image:loc>
       <image:title>Parthenon Diner Lunch Menu</image:title>
       <image:caption>Burgers, sandwiches, and salads for lunch</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/images/menu-steak.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/images/menu-steak.webp</image:loc>
       <image:title>Parthenon Diner Dinner Menu</image:title>
       <image:caption>Steaks, seafood, and dinner entrees</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/images/menu-gyro.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/images/menu-gyro.webp</image:loc>
       <image:title>Parthenon Diner Greek Menu</image:title>
       <image:caption>Authentic Greek gyros, souvlaki, moussaka, and spanakopita</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>
@@ -121,7 +121,7 @@
   <url>
     <loc>https://www.parthenondiner.com/about</loc>
     <image:image>
-      <image:loc>https://www.parthenondiner.com/eggs-benedict.jpg</image:loc>
+      <image:loc>https://www.parthenondiner.com/eggs-benedict.webp</image:loc>
       <image:title>Eggs Benedict at Parthenon Diner</image:title>
       <image:caption>Family-owned diner serving breakfast, lunch, and dinner since 1985</image:caption>
       <image:geo_location>Branford, Connecticut</image:geo_location>

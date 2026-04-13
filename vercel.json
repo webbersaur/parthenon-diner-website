@@ -33,7 +33,15 @@
     { "source": "/category/:path*", "destination": "/", "statusCode": 410 },
     { "source": "/tag/:path*", "destination": "/", "statusCode": 410 },
     { "source": "/xmlrpc.php", "destination": "/", "statusCode": 410 },
-    { "source": "/egss%20benedict.jpg", "destination": "/eggs-benedict.jpg", "permanent": true }
+    { "source": "/eggs-benedict.jpg", "destination": "/eggs-benedict.webp", "permanent": true },
+    { "source": "/egss%20benedict.jpg", "destination": "/eggs-benedict.webp", "permanent": true },
+    { "source": "/Parthenon-outside.jpg", "destination": "/parthenon-outside.webp", "permanent": true },
+    { "source": "/old-saybrook.jpg", "destination": "/old-saybrook.webp", "permanent": true },
+    { "source": "/parthenon-hero-small.jpeg", "destination": "/parthenon-hero-small.webp", "permanent": true },
+    { "source": "/images/menu-breakfast.jpg", "destination": "/images/menu-breakfast.webp", "permanent": true },
+    { "source": "/images/menu-burger.jpg", "destination": "/images/menu-burger.webp", "permanent": true },
+    { "source": "/images/menu-steak.jpg", "destination": "/images/menu-steak.webp", "permanent": true },
+    { "source": "/images/menu-gyro.jpg", "destination": "/images/menu-gyro.webp", "permanent": true }
   ],
   "rewrites": [
     { "source": "/llms", "destination": "/llms.txt" }
