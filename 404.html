@@ -6,126 +6,289 @@
   <title>Page Not Found | Parthenon Diner</title>
   <meta name="description" content="Page not found — visit Parthenon Diner's homepage or menu for breakfast, lunch, dinner and Greek specialties in Branford and Old Saybrook, CT.">
   <meta name="robots" content="noindex">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/styles.css">
+
   <style>
-    :root {
-      --color-primary: #8B1538;
-      --color-dark: #1a1a2e;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: #faf9f6;
-      color: var(--color-dark);
+    .error-section {
+      min-height: calc(100vh - 80px);
       display: flex;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      padding: 140px 0 80px;
+      background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 100%);
+    }
+    .error-content {
       text-align: center;
-      padding: 2rem;
+      max-width: 600px;
+      margin: 0 auto;
     }
-    .container { max-width: 500px; }
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
+    .error-code {
+      font-family: var(--font-heading);
+      font-size: clamp(5rem, 12vw, 8rem);
+      font-weight: 700;
       color: var(--color-primary);
-      margin-bottom: 1rem;
+      line-height: 1;
+      margin-bottom: var(--space-sm);
+      opacity: 0.15;
     }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
-      color: #555;
+    .error-content h1 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      color: var(--color-charcoal);
+      margin-bottom: var(--space-sm);
     }
-    .links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    .links a {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
+    .error-content p {
+      font-size: 1.125rem;
+      color: var(--color-gray);
+      line-height: 1.7;
+      margin-bottom: var(--space-xl);
+    }
+    .error-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      justify-content: center;
+      margin-bottom: var(--space-2xl);
+    }
+    .error-helpful {
+      text-align: left;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: var(--space-lg);
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+    .error-helpful h2 {
+      font-size: 1.125rem;
+      color: var(--color-charcoal);
+      margin-bottom: var(--space-sm);
+    }
+    .error-helpful-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xs);
+    }
+    .error-helpful a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.625rem 0.75rem;
+      border-radius: var(--radius-md);
+      font-size: 0.9375rem;
       font-weight: 500;
-      transition: background 0.2s, color 0.2s;
+      color: var(--color-charcoal);
+      transition: all var(--transition-fast);
     }
-    .links a.primary {
-      background: var(--color-primary);
-      color: #fff;
-    }
-    .links a.primary:hover { background: #a61d47; }
-    .links a.secondary {
-      border: 2px solid var(--color-primary);
+    .error-helpful a:hover {
+      background: var(--color-cream);
       color: var(--color-primary);
     }
-    .links a.secondary:hover {
-      background: var(--color-primary);
-      color: #fff;
+    .error-helpful a svg {
+      flex-shrink: 0;
+      color: var(--color-accent);
+    }
+    @media (max-width: 480px) {
+      .error-helpful-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
-  <script>
-    (function() {
-      var path = window.location.pathname.toLowerCase();
-
-      var redirects = {
-        '/page/26782-menu': '/menu',
-        '/page/26930-breakfast': '/breakfast-branford',
-        '/page/1236-photos-of-greece': '/menu',
-        '/page/30357-branford-home': '/',
-        '/html/lunch___dinner.html': '/menu#lunch',
-        '/feed': '/',
-        '/feed/': '/',
-        '/embed': '/',
-        '/embed/': '/',
-        '/social': '/',
-        '/social/': '/',
-        '/branford/': '/branford',
-        '/old-saybrook/': '/old-saybrook',
-        '/oldsaybrook': '/old-saybrook',
-        '/oldsaybrook/': '/old-saybrook',
-        '/locations': '/#locations',
-        '/locations/': '/#locations',
-        '/locations/branford': '/branford',
-        '/locations/branford/': '/branford',
-        '/locations/old-saybrook': '/old-saybrook',
-        '/locations/old-saybrook/': '/old-saybrook',
-      };
-
-      // Check exact match first
-      var dest = redirects[path] || redirects[path.replace(/\/$/, '')];
-      if (dest) {
-        window.location.replace(dest);
-        return;
-      }
-
-      // Pattern-based redirects
-      if (/^\/wp-content\/uploads\/.*\.(pdf|PDF)/.test(path)) {
-        window.location.replace('/menu');
-        return;
-      }
-      if (/^\/wp-/.test(path)) {
-        window.location.replace('/');
-        return;
-      }
-      if (/^\/menu\//.test(path)) {
-        window.location.replace('/menu');
-        return;
-      }
-      if (/^\/page\//.test(path)) {
-        window.location.replace('/');
-        return;
-      }
-    })();
-  </script>
 </head>
 <body>
-  <div class="container">
-    <h1>Page Not Found</h1>
-    <p>Sorry, the page you're looking for doesn't exist. It may have been moved or removed. Let's get you back on track.</p>
-    <div class="links">
-      <a href="/" class="primary">Go Home</a>
-      <a href="/menu" class="secondary">View Menu</a>
+  <!-- Header -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-text">Parthenon</span>
+        <span class="logo-subtitle">Diner & Restaurant</span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="/menu" class="nav-link">Menu</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
+          <li><a href="/branford" class="nav-link">Locations</a></li>
+          <li><a href="/catering-events" class="nav-link">Events</a></li>
+          <li><a href="/blog/" class="nav-link">Blog</a></li>
+          <li class="nav-cta">
+            <div class="order-dropdown">
+              <button class="btn btn-primary">Order Now</button>
+              <div class="order-dropdown-menu">
+                <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/v3" target="_blank">
+                  <span class="location-name">Branford</span>
+                  <span class="location-address">374 E Main St</span>
+                </a>
+                <a href="https://order.toasttab.com/online/parthenon-diner-of-old-saybrook-809-boston-post-rd" target="_blank">
+                  <span class="location-name">Old Saybrook</span>
+                  <span class="location-address">809 Boston Post Rd</span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-  </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-list">
+      <li><a href="/menu" class="mobile-nav-link">Menu</a></li>
+      <li><a href="/about" class="mobile-nav-link">About</a></li>
+      <li><a href="/branford" class="mobile-nav-link">Locations</a></li>
+      <li><a href="/catering-events" class="mobile-nav-link">Events</a></li>
+      <li><a href="/blog/" class="mobile-nav-link">Blog</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <p class="mobile-order-label">Order Online</p>
+      <a href="https://www.toasttab.com/parthenon-diner-branford-374-east-main-street/v3" class="btn btn-secondary" target="_blank" style="width: 100%;">Branford</a>
+      <a href="https://order.toasttab.com/online/parthenon-diner-of-old-saybrook-809-boston-post-rd" class="btn btn-secondary" target="_blank" style="width: 100%;">Old Saybrook</a>
+    </div>
+    <div class="mobile-nav-cta">
+      <p class="mobile-order-label">Call Now</p>
+      <a href="tel:203-481-0333" class="btn btn-secondary" style="width: 100%;">Branford: (203) 481-0333</a>
+      <a href="tel:860-395-5111" class="btn btn-secondary" style="width: 100%;">Old Saybrook: (860) 395-5111</a>
+    </div>
+  </nav>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- 404 Content -->
+  <section class="error-section">
+    <div class="container">
+      <div class="error-content">
+        <div class="error-code">404</div>
+        <h1>This Page Has Left the Table</h1>
+        <p>The page you're looking for may have been moved or removed. But there's plenty more to explore at Parthenon Diner.</p>
+
+        <div class="error-links">
+          <a href="/" class="btn btn-primary">Go Home</a>
+          <a href="/menu" class="btn btn-secondary">View Menu</a>
+        </div>
+
+        <div class="error-helpful">
+          <h2>Looking for something specific?</h2>
+          <div class="error-helpful-grid">
+            <a href="/breakfast-branford">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Breakfast
+            </a>
+            <a href="/menu#lunch">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+              Lunch & Dinner
+            </a>
+            <a href="/menu#greek">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              Greek Specialties
+            </a>
+            <a href="/catering-events">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Catering & Events
+            </a>
+            <a href="/branford">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Branford Location
+            </a>
+            <a href="/old-saybrook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Old Saybrook Location
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <span class="logo-text">Parthenon</span>
+            <span class="logo-subtitle">Diner & Restaurant</span>
+          </a>
+          <p>Serving the Connecticut Shoreline with classic American comfort food and authentic Greek specialties since 1985.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/parthenon.diner/" class="footer-social-link" target="_blank" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/parthenonbranford/" class="footer-social-link" target="_blank" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="/menu" class="footer-link">Menu</a>
+            <a href="/about" class="footer-link">About Us</a>
+            <a href="/branford" class="footer-link">Branford Location</a>
+            <a href="/old-saybrook" class="footer-link">Old Saybrook Location</a>
+            <a href="/blog/" class="footer-link">Blog</a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title">Menu</h4>
+          <div class="footer-links">
+            <a href="/breakfast-branford" class="footer-link">Breakfast (Branford)</a>
+            <a href="/breakfast-old-saybrook" class="footer-link">Breakfast (Old Saybrook)</a>
+            <a href="/menu#lunch" class="footer-link">Lunch</a>
+            <a href="/menu#dinner" class="footer-link">Dinner</a>
+            <a href="/menu#greek" class="footer-link">Greek Specialties</a>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>374 E Main St, Branford, CT<br>809 Boston Post Rd, Old Saybrook, CT</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Branford: (203) 481-0333<br>Old Saybrook: (860) 395-5111</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Parthenon Diner and Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
 </body>
 </html>
