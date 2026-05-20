@@ -2,6 +2,12 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    {
+      "source": "/:path(.*)",
+      "has": [{ "type": "host", "value": "parthenon-diner-website.vercel.app" }],
+      "destination": "https://www.parthenondiner.com/:path",
+      "permanent": true
+    },
     { "source": "/not-happy-2", "destination": "/not-happy", "permanent": true },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/menu.html", "destination": "/menu", "permanent": true },
