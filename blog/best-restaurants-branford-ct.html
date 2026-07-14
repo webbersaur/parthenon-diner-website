@@ -439,7 +439,11 @@
     </div>
   </footer>
 
-  <!-- Rate Us Modal -->
+  <!-- Review request modal. NOTE: no sentiment gate. Everyone is sent to /feedback,
+       which lists the review platforms for both locations; private feedback is offered
+       alongside it, never instead of it. Routing only happy customers to the review
+       links is "review gating" - prohibited by Google since 2018 and grounds for
+       suspending the Business Profile. Do not reintroduce a Happy / Not Happy fork. -->
   <div class="rate-modal-overlay" id="rateUsModal">
     <div class="rate-modal">
       <button type="button" class="rate-modal-close" id="closeRateUsModal" aria-label="Close">
@@ -449,17 +453,11 @@
         </svg>
       </button>
       <h2 class="rate-modal-title">How Was Your Experience?</h2>
-      <p class="rate-modal-subtitle">We value your feedback!</p>
-      <div class="rate-modal-buttons">
-        <a href="/feedback" class="rate-modal-btn rate-modal-btn-happy">
-          <span class="rate-modal-btn-icon">😊</span>
-          <span class="rate-modal-btn-text">Happy</span>
-        </a>
-        <a href="/not-happy" class="rate-modal-btn rate-modal-btn-sad">
-          <span class="rate-modal-btn-icon">😔</span>
-          <span class="rate-modal-btn-text">Not Happy</span>
-        </a>
+      <p class="rate-modal-subtitle">Your review helps other diners know what to expect. It takes about 30 seconds.</p>
+      <div class="rate-modal-links">
+        <a href="/feedback" class="btn btn-primary btn-lg">Leave a Review</a>
       </div>
+      <p class="rate-modal-alt">Something wasn't right? <a href="/private-feedback" class="rate-modal-alt-link">Tell us privately instead</a></p>
     </div>
   </div>
 

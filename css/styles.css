@@ -1005,27 +1005,26 @@ p {
   gap: 0.5rem;
 }
 
-.rate-us-emojis {
+.rate-us-stars {
   display: flex;
-  gap: var(--space-md);
+  gap: 0.15rem;
+  flex-shrink: 0;
 }
 
-.rate-us-emojis span {
-  font-size: 3.5rem;
+.rate-us-stars span {
+  font-size: 2.25rem;
+  line-height: 1;
+  display: inline-block;
   transition: transform var(--transition-normal);
 }
 
-.rate-us-emojis .emoji-happy:hover {
+.rate-us-stars span:hover {
   transform: scale(1.2) rotate(5deg);
 }
 
-.rate-us-emojis .emoji-sad:hover {
-  transform: scale(1.2) rotate(-5deg);
-}
-
 @media (min-width: 768px) {
-  .rate-us-emojis span {
-    font-size: 4.5rem;
+  .rate-us-stars span {
+    font-size: 3rem;
   }
 }
 
@@ -1105,56 +1104,31 @@ p {
   margin-bottom: var(--space-lg);
 }
 
-.rate-modal-buttons {
-  display: flex;
-  gap: var(--space-md);
-  justify-content: center;
-}
-
-.rate-modal-btn {
+.rate-modal-links {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-  border-radius: var(--radius-md);
-  text-decoration: none;
-  transition: all 0.3s ease;
+  gap: var(--space-sm);
 }
 
-.rate-modal-btn-happy {
-  background-color: #4CAF50;
-  color: var(--color-white);
+.rate-modal-links .btn {
+  width: 100%;
 }
 
-.rate-modal-btn-happy:hover {
-  background-color: #43A047;
-  transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
-}
-
-.rate-modal-btn-sad {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-}
-
-.rate-modal-btn-sad:hover {
-  background-color: var(--color-primary-dark);
-  transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(139, 21, 56, 0.4);
-}
-
-.rate-modal-btn-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--space-xs);
-}
-
-.rate-modal-btn-text {
-  font-weight: 600;
+/* Opt-in private feedback link. Offered alongside the review link, never instead of it. */
+.rate-modal-alt {
+  margin-top: var(--space-md);
+  margin-bottom: 0;
   font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  color: var(--color-gray);
+}
+
+.rate-modal-alt-link {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.rate-modal-alt-link:hover {
+  color: var(--color-primary-dark);
 }
 
 /* ---------- CTA Banner ---------- */

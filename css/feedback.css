@@ -224,11 +224,11 @@ body:has(.feedback-page) .footer {
    NOT HAPPY PAGE STYLES
    ============================================ */
 
-.not-happy-page {
+.private-feedback-page {
   padding-top: 100px;
 }
 
-.not-happy-content {
+.private-feedback-content {
   position: relative;
   z-index: 1;
   max-width: 700px;
@@ -237,7 +237,7 @@ body:has(.feedback-page) .footer {
 }
 
 /* ---------- Apology Message ---------- */
-.not-happy-message {
+.private-feedback-message {
   text-align: center;
   margin-bottom: var(--space-xl);
 }
@@ -363,140 +363,21 @@ body:has(.feedback-page) .footer {
   color: var(--color-gray);
 }
 
-/* ============================================
-   FEEDBACK LIGHTBOX MODAL
-   ============================================ */
 
-.feedback-modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10000;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity var(--transition-normal), visibility var(--transition-normal);
-  padding: var(--space-md);
-}
-
-.feedback-modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.feedback-modal {
-  background-color: var(--color-white);
-  border-radius: var(--radius-lg);
-  padding: var(--space-2xl);
-  max-width: 500px;
-  width: 100%;
+/* Private feedback link on /feedback. Offered alongside the public review buttons,
+   never as a gate in front of them (that would be review gating). */
+.feedback-private-alt {
   text-align: center;
-  position: relative;
-  transform: scale(0.9) translateY(20px);
-  transition: transform var(--transition-normal);
-  box-shadow: var(--shadow-lg);
-}
-
-.feedback-modal-overlay.active .feedback-modal {
-  transform: scale(1) translateY(0);
-}
-
-.feedback-modal-close {
-  position: absolute;
-  top: var(--space-sm);
-  right: var(--space-sm);
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
+  margin: var(--space-xl) auto 0;
+  font-size: 0.9375rem;
   color: var(--color-gray);
-  cursor: pointer;
-  border-radius: var(--radius-sm);
-  transition: background-color var(--transition-fast), color var(--transition-fast);
 }
 
-.feedback-modal-close:hover {
-  background-color: var(--color-cream);
-  color: var(--color-charcoal);
+.feedback-private-alt a {
+  color: var(--color-primary);
+  text-decoration: underline;
 }
 
-.feedback-modal-title {
-  font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  color: var(--color-charcoal);
-  margin-bottom: var(--space-sm);
-}
-
-.feedback-modal-subtitle {
-  color: var(--color-gray);
-  font-size: 1rem;
-  margin-bottom: var(--space-xl);
-}
-
-.feedback-modal-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
-}
-
-@media (min-width: 480px) {
-  .feedback-modal-buttons {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-.feedback-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-lg) var(--space-xl);
-  border-radius: var(--radius-md);
-  text-decoration: none;
-  transition: all var(--transition-normal);
-  min-width: 160px;
-}
-
-.feedback-btn-happy {
-  background-color: #4CAF50;
-  color: var(--color-white);
-}
-
-.feedback-btn-happy:hover {
-  background-color: #43A047;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
-.feedback-btn-not-happy {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-}
-
-.feedback-btn-not-happy:hover {
-  background-color: var(--color-primary-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
-.feedback-btn-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--space-xs);
-}
-
-.feedback-btn-text {
-  font-weight: 600;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+.feedback-private-alt a:hover {
+  color: var(--color-primary-dark);
 }
